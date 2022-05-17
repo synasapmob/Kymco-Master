@@ -1,0 +1,107 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul, li {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Playfair Display', serif;
+  max-width: 100%;
+  width: 1430px;
+  margin: 0 auto;
+}
+
+/*
+1	flexbox					display , flex-direction , justify-content , align-items
+2	grid 					display , direction "rows" "columns" , repeat($row) , ($fr + fr)
+3	margin					margin-top , margin-right , margin-bottom , margin-left
+4	padding					padding-top , padding-right , padding-bottom , padding-left
+5	border					px , solid , color
+6	border-radius			border-radius
+7	position				position , inset: top right bottom left
+8	font 					font-size , color , font-family , text-transform
+9	text-overflow 			line-clamp
+10	width 					width , height
+11	max-width  				max-width , max-height
+12	min-width				min-width , min-height
+13	pointer 				cursor , user-select , pointer-events
+14	media-breakpoint-up 	xs , sm , md , lg , xl , xxl
+*/
+h1 {
+  font-size: 6.4rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: none;
+}
+
+h1:hover {
+  background-color: red;
+}
+/*# sourceMappingURL=style.css.map */

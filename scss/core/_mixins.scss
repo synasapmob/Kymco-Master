@@ -1,0 +1,93 @@
+/*
+1	flexbox					display , flex-direction , justify-content , align-items
+2	grid 					display , direction "rows" "columns" , repeat($row) , ($fr + fr)
+3	margin					margin-top , margin-right , margin-bottom , margin-left
+4	padding					padding-top , padding-right , padding-bottom , padding-left
+5	border					px , solid , color
+6	border-radius			border-radius
+7	position				position , inset: top right bottom left
+8	font 					font-size , color , font-family , text-transform
+9	text-overflow 			line-clamp
+10	width 					width , height
+11	max-width  				max-width , max-height
+12	min-width				min-width , min-height
+13	pointer 				cursor , user-select , pointer-events
+14	media-breakpoint-up 	xs , sm , md , lg , xl , xxl
+*/
+
+@mixin flexbox($display, $direction, $justify, $align){
+    display: $display; flex-direction: $direction;
+    justify-content: $justify; align-items: $align; 
+}
+
+@mixin grid($display, $direction, $row, $fr){
+	display: $display;
+
+	@if $direction == "rows"{
+		grid-template-rows: repeat($row, $fr + fr);
+	}
+	@if $direction == "columns"{
+		grid-template-columns: repeat($row, $fr + fr);
+	}
+}
+
+@mixin margin($top, $right, $bottom, $left){
+	margin: $top $right $bottom $left;
+}
+
+@mixin padding($top, $right, $bottom, $left){
+	padding: $top $right $bottom $left;
+}
+
+@mixin border($px, $solid, $color){
+	border: $px $solid $color; 
+}
+
+@mixin border-radius($radius){
+	border-radius: $radius;
+}
+
+@mixin position($position, $top, $left, $bottom, $right){
+	position: $position; 
+	inset: $top $right $bottom $left; 
+}
+
+@mixin font($fontsize, $fontcolor, $fontfamily, $texttransform){
+	font-size: $fontsize; color: $fontcolor;
+	font-family: $fontfamily; text-transform: $texttransform; 
+}
+
+@mixin text-overflow($lines) {
+	display: -webkit-inline-box; -webkit-line-clamp: $lines; 
+	-webkit-box-orient: vertical; text-overflow: ellipsis; overflow: hidden; 
+}
+
+@mixin width($width, $height){
+	width: $width; 
+	height: $height; 
+}
+
+@mixin max-width($max-width, $max-height){
+	max-width: $max-width;
+	max-height: $max-height;
+}
+
+@mixin min-width($min-width, $min-height){
+	min-width: $min-width;
+	min-height: $min-height;
+}
+
+@mixin pointer($cursor, $user-select, $pointer){
+	cursor: $cursor; // hover
+	user-select: $user-select; // not allow select , highlight/coppy
+	pointer-events: $pointer; // disable click 
+}
+
+@mixin media-breakpoint-up($value) {
+	@if $value == "xs" { @media screen and (max-width: $xs-min) { @content; } }
+	@if $value == "sm" { @media screen and (max-width: $sm-min) { @content; } }
+	@if $value == "md" { @media screen and (max-width: $md-min) { @content; } }
+	@if $value == "lg" { @media screen and (max-width: $lg-min) { @content; } }
+	@if $value == "xl" { @media screen and (max-width: $xl-min) { @content; } }
+	@if $value == "xxl" { @media screen and (max-width: $xxl-min) { @content; } }
+}
