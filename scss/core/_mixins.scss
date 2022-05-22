@@ -1,18 +1,15 @@
 /*
 1	flexbox					display , flex-direction , justify-content , align-items
 2	grid 					display , direction "rows" "columns" , repeat($row) , ($fr + fr)
-3	margin					margin-top , margin-right , margin-bottom , margin-left
-4	padding					padding-top , padding-right , padding-bottom , padding-left
-5	border					px , solid , color
-6	border-radius			border-radius
-7	position				position , inset: top right bottom left
-8	font 					font-size , color , font-family , text-transform
-9	text-overflow 			line-clamp
-10	width 					width , height
-11	max-width  				max-width , max-height
-12	min-width				min-width , min-height
-13	pointer 				cursor , user-select , pointer-events
-14	media-breakpoint-up 	xs , sm , md , lg , xl , xxl
+3	border					radius, px , solid , color
+4	position				position , inset: top right bottom left
+5	font 					font-size , color , font-family , text-transform
+6	text-overflow 			line-clamp
+7	width 					width , height
+8	max-width  				max-width , max-height
+9	min-width				min-width , min-height
+10	pointer 				cursor , user-select , pointer-events
+11	media-breakpoint-up 	xs , sm , md , lg , xl , xxl
 */
 
 @mixin flexbox($display, $direction, $justify, $align){
@@ -31,20 +28,9 @@
 	}
 }
 
-@mixin margin($top, $right, $bottom, $left){
-	margin: $top $right $bottom $left;
-}
-
-@mixin padding($top, $right, $bottom, $left){
-	padding: $top $right $bottom $left;
-}
-
-@mixin border($px, $solid, $color){
-	border: $px $solid $color; 
-}
-
-@mixin border-radius($radius){
+@mixin border($radius, $px, $solid, $color){
 	border-radius: $radius;
+	border: $px $solid $color; 
 }
 
 @mixin position($position, $top, $left, $bottom, $right){

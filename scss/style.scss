@@ -3,4 +3,10 @@
 @import './core/reset';
 @import './core/layout';
 @import './core/mixins';
+@import './core/component';
+@import './core/element';
 
+
+.header{
+    background-color: red;
+}
