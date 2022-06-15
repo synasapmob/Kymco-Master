@@ -21,10 +21,10 @@
 	display: $display;
 
 	@if $direction == "rows"{
-		grid-template-rows: repeat($row, $fr + fr);
+		grid-template-rows: repeat($row, $fr);
 	}
 	@if $direction == "columns"{
-		grid-template-columns: repeat($row, $fr + fr);
+		grid-template-columns: repeat($row, $fr);
 	}
 }
 
