@@ -1,0 +1,50 @@
+.hero{
+    overflow: hidden;
+    position: relative;
+
+    &-banner{
+        @include width(100%, auto);
+    }
+
+    &-button{
+        @include position(absolute, 50%, auto, auto, 50%);
+        
+        padding: calc(13.2rem - 9.55rem);
+        transform: translate(50%, 50%);
+        border-radius: 100%;
+
+        &::before{
+            content: "";
+            @include width(100%, 100%);
+            @include position(absolute, 0, auto, auto, 0);
+
+            border-radius: 100%;
+            background-color: rgba($cltext-light-pink, 0.6);
+        }
+
+        &::after{
+            content: "";
+            @include width(73%, 73%);
+            @include position(absolute, 50%, auto, auto, 50%);
+
+            transform: translate(50%, -50%);
+            border-radius: 100%;
+            background-color: rgba($cltext-light-pink, 0.5);
+        }
+
+        &:hover{
+            transition: 0.5s linear;
+            outline: 0.5rem dashed rgba($cltext-light-pink, 0.2);
+
+            &::before{
+                transition: 0.5s linear;
+                opacity: 0;
+            }
+        }
+    }
+    &-circle{
+        transition: 0.5s linear;
+        position: relative;
+        z-index: 10;
+    }
+}

@@ -1,0 +1,11 @@
+.icon{
+    &-search{
+        vertical-align: middle;
+    }
+    &-arrow{
+        &.down{
+            padding-top: calc(2.1rem - 1rem);
+            transform: translateX(-25%);
+        }
+    }
+}

@@ -1,0 +1,12 @@
+.header{
+    @include width(100%, 6.3rem);
+    
+    z-index: 10;
+    position: fixed;
+}
+
+.logo{
+    &-img{
+        @include max-width(100%, 100%);
+    }
+}

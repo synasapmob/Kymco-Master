@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('../fonts/MyriadPro-Regular.woff2') format('woff2'),
+        url('../fonts/MyriadPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'D-DIN Condensed';
+    src: url('../fonts/D-DINCondensed-Bold.woff2') format('woff2'),
+        url('../fonts/D-DINCondensed-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'SVN-Avo';
+    src: url('../fonts/SVN-Avobold.woff2') format('woff2'),
+        url('../fonts/SVN-Avobold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'UTM-Avo';
+    src: url('../fonts/UTMAvo.woff2') format('woff2'),
+        url('../fonts/UTMAvo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'SFU-SHRIF';
+    src: url('../fonts/SFUDINEngschrift.woff2') format('woff2'),
+        url('../fonts/SFUDINEngschrift.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'SFU-DIN';
+    src: url('../fonts/SFUDINEngAlt.woff2') format('woff2'),
+        url('../fonts/SFUDINEngAlt.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: fallback;
+}
+

@@ -5,8 +5,16 @@
 @import './core/mixins';
 @import './core/component';
 @import './core/element';
-
-
-.header{
-    background-color: red;
-}
+// support
+@import './page/nav';
+@import './page/paragraph';
+@import './page/hero';
+@import './page/slider';
+// main
+@import './page/header';
+@import './page/footer';
+@import './page/main';
+// page
+@import './page/home';
+@import './page/product';
+@import './page/details';

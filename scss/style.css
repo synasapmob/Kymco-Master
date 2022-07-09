@@ -42,7 +42,7 @@ blockquote, q {
 
 blockquote:before, blockquote:after,
 q:before, q:after {
-  content: '';
+  content: "";
   content: none;
 }
 
@@ -54,13 +54,11 @@ table {
 @-ms-viewport {
   width: device-width;
 }
-
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
@@ -70,7 +68,7 @@ html {
 body {
   font-size: 1.6rem;
   max-width: 100%;
-  width: 1440px;
+  width: 1600px;
   margin: 0 auto;
 }
 
@@ -87,7 +85,1287 @@ body {
 10	pointer 				cursor , user-select , pointer-events
 11	media-breakpoint-up 	xs , sm , md , lg , xl , xxl
 */
-.header {
+.container-fluid {
+  padding: 0 4.8rem 0 5.5rem;
+}
+
+.container {
+  padding-left: 21.6rem;
+}
+
+.icon-search {
+  vertical-align: middle;
+}
+.icon-arrow.down {
+  padding-top: 1.1rem;
+  transform: translateX(-25%);
+}
+
+.nav-header.nav, .nav.title-heading.dealer, .nav.dealer.title-sub.product-comfortable, .nav.title-heading.customers, .nav.customers.title-sub.product-comfortable {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.nav-header.item, .item.title-heading.dealer, .item.dealer.title-sub.product-comfortable, .item.title-heading.customers, .item.customers.title-sub.product-comfortable {
+  display: inline-block;
+}
+.nav-header.list:nth-child(2) .nav-header.item:not(:first-child), .list.title-heading.dealer:nth-child(2) .nav-header.item:not(:first-child), .list.dealer.title-sub.product-comfortable:nth-child(2) .nav-header.item:not(:first-child), .list.title-heading.customers:nth-child(2) .nav-header.item:not(:first-child), .list.customers.title-sub.product-comfortable:nth-child(2) .nav-header.item:not(:first-child), .nav-header.list:nth-child(2) .item.title-heading.dealer:not(:first-child), .nav-header.list:nth-child(2) .item.dealer.title-sub.product-comfortable:not(:first-child), .nav-header.list:nth-child(2) .item.title-heading.customers:not(:first-child), .nav-header.list:nth-child(2) .item.customers.title-sub.product-comfortable:not(:first-child), .list.title-heading.dealer:nth-child(2) .item.title-heading.dealer:not(:first-child), .list.dealer.title-sub.product-comfortable:nth-child(2) .item.title-heading.dealer:not(:first-child), .list.title-heading.dealer:nth-child(2) .item.dealer.title-sub.product-comfortable:not(:first-child), .list.dealer.title-sub.product-comfortable:nth-child(2) .item.dealer.title-sub.product-comfortable:not(:first-child), .list.title-heading.customers:nth-child(2) .item.title-heading.dealer:not(:first-child), .list.customers.title-sub.product-comfortable:nth-child(2) .item.title-heading.dealer:not(:first-child), .list.title-heading.customers:nth-child(2) .item.dealer.title-sub.product-comfortable:not(:first-child), .list.customers.title-sub.product-comfortable:nth-child(2) .item.dealer.title-sub.product-comfortable:not(:first-child), .list.title-heading.dealer:nth-child(2) .item.title-heading.customers:not(:first-child), .list.dealer.title-sub.product-comfortable:nth-child(2) .item.title-heading.customers:not(:first-child), .list.title-heading.dealer:nth-child(2) .item.customers.title-sub.product-comfortable:not(:first-child), .list.dealer.title-sub.product-comfortable:nth-child(2) .item.customers.title-sub.product-comfortable:not(:first-child), .list.title-heading.customers:nth-child(2) .item.title-heading.customers:not(:first-child), .list.customers.title-sub.product-comfortable:nth-child(2) .item.title-heading.customers:not(:first-child), .list.title-heading.customers:nth-child(2) .item.customers.title-sub.product-comfortable:not(:first-child), .list.customers.title-sub.product-comfortable:nth-child(2) .item.customers.title-sub.product-comfortable:not(:first-child) {
+  margin-left: 5.2rem;
+}
+
+.title-heading.nav-header, .nav-header.title-sub.product-comfortable, .title-heading.dealer, .dealer.title-sub.product-comfortable, .title-heading.customers, .customers.title-sub.product-comfortable {
+  font-size: 1.6rem;
+  color: #ffffff;
+  font-family: "SVN-Avo";
+  text-transform: uppercase;
+  display: inline-block;
+  text-decoration: none;
+  letter-spacing: 0.2137rem;
+  line-height: 2.5;
+}
+.title-heading.dealer, .dealer.title-sub.product-comfortable, .title-heading.customers, .customers.title-sub.product-comfortable {
+  padding: 0 2.4rem 0.4rem 2.4rem;
+  display: inline;
+  background-color: #f4352c;
+  margin: 0 0.5rem 0 1.5rem;
+}
+.title-heading.customers, .customers.title-sub.product-comfortable {
+  margin: unset;
+}
+.title-heading.vehicle-name, .vehicle-name.title-sub.product-comfortable {
+  font-size: 4.8rem;
+  color: #ffffff;
+  font-family: "D-DIN Condensed";
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  line-height: 0.8333333333;
+}
+.title-heading.slider-title, .slider-title.title-sub.product-comfortable {
+  font-size: 4.8rem;
+  color: #ffffff;
+  font-family: "SVN-Avo";
+  text-transform: none;
+  position: absolute;
+  inset: 50% auto auto auto;
+  white-space: pre-line;
+  transform: translateY(50%);
+  line-height: 1.2;
+}
+.title-heading.home-mission, .home-mission.title-sub.product-comfortable, .title-heading.product-product, .product-product.title-sub.product-comfortable, .title-heading.home-product, .home-product.title-sub.product-comfortable {
+  font-size: 6rem;
+  color: #000000;
+  font-family: "SFU-DIN";
+  text-transform: uppercase;
+  position: relative;
+  letter-spacing: 0.21rem;
+  line-height: 0.6666666667;
+}
+.title-heading.home-mission::before, .home-mission.title-sub.product-comfortable::before, .title-heading.product-product::before, .product-product.title-sub.product-comfortable::before, .title-heading.home-product::before, .home-product.title-sub.product-comfortable::before {
+  content: "";
+  width: 65%;
+  height: auto;
+  position: absolute;
+  inset: 0 auto auto -50%;
+  margin-top: -2.2rem;
+  transform: translateY(-100%);
+  border-bottom: 0.3rem solid #000000;
+}
+.title-heading.home-product, .home-product.title-sub.product-comfortable {
+  font-family: "SFU-SHRIF";
+}
+.title-heading.home-product::before, .home-product.title-sub.product-comfortable::before {
+  content: none;
+}
+.title-heading.home-car, .home-car.title-sub.product-comfortable {
+  font-size: 6rem;
+  color: #000000;
+  font-family: "SFU-DIN";
+  text-transform: uppercase;
+  white-space: pre-line;
+  line-height: 1.2;
+}
+.title-heading.home-news, .home-news.title-sub.product-comfortable {
+  font-size: 6rem;
+  color: #000000;
+  font-family: "SFU-DIN";
+  text-transform: uppercase;
+  letter-spacing: 0.21rem;
+  line-height: 0.6666666667;
+}
+.title-heading.home-details, .home-details.title-sub.product-comfortable, .title-heading.title-sub.home-network, .title-sub.home-network.product-comfortable {
+  font-size: 3.5rem;
+  color: #000000;
+  font-family: "D-DIN Condensed";
+  text-transform: uppercase;
+  white-space: pre-line;
+  line-height: 1.1428571429;
+}
+.title-heading.home-details.first, .home-details.first.title-sub.product-comfortable, .title-heading.first.title-sub.home-network, .first.title-sub.home-network.product-comfortable {
+  font-size: 2rem;
+  line-height: 2;
+}
+.title-heading.home-network, .home-network.title-sub.product-comfortable {
+  font-size: 6rem;
+  color: #000000;
+  font-family: "SFU-DIN";
+  text-transform: uppercase;
+  letter-spacing: 0.21rem;
+  line-height: 0.6666666667;
+}
+.title-heading.home-contact, .home-contact.title-sub.product-comfortable {
+  font-size: 3rem;
+  color: #ffffff;
+  font-family: "D-DIN Condensed";
+  text-transform: uppercase;
+  letter-spacing: 0.21rem;
+  line-height: 1.3333333333;
+}
+.title-heading.product-product::before, .product-product.title-sub.product-comfortable::before {
+  content: none;
+}
+.title-heading.product-comfortable, .product-comfortable.title-sub {
+  font-size: 5rem;
+  color: #000000;
+  font-family: "SFU-DIN";
+  text-transform: uppercase;
+  line-height: 1.25;
+  letter-spacing: 0.21rem;
+  white-space: pre-line;
+}
+.title-heading.product-adventure, .product-adventure.title-sub.product-comfortable {
+  font-size: 6rem;
+  color: #000000;
+  font-family: "SFU-DIN";
+  text-transform: uppercase;
+  white-space: pre-line;
+}
+.title-heading.product-business, .product-business.title-sub.product-comfortable {
+  font-size: 6rem;
+  color: #000000;
+  font-family: "SFU-DIN";
+  text-transform: uppercase;
+  white-space: pre-line;
+}
+.title-heading.car-comfortable, .car-comfortable.title-sub.product-comfortable {
+  font-size: 2.2rem;
+  color: #000000;
+  font-family: "SFU-DIN";
+  text-transform: uppercase;
+  letter-spacing: 0.21rem;
+}
+.title-heading.car-adventure, .car-adventure.title-sub.product-comfortable {
+  font-size: 1.8rem;
+  color: #000000;
+  font-family: "UTM-Avo";
+  text-transform: none;
+}
+.title-heading.car-business, .car-business.title-sub.product-comfortable {
+  font-size: 2.2rem;
+  color: #000000;
+  font-family: "SFU-DIN";
+  text-transform: uppercase;
+  letter-spacing: 0.09rem;
+}
+.title-heading.details-comfortable, .details-comfortable.title-sub.product-comfortable {
+  font-size: 2.2rem;
+  color: #ffffff;
+  font-family: "SFU-DIN";
+  text-transform: uppercase;
+  letter-spacing: 0.29rem;
+  line-height: 1.8181818182;
+  background-color: #f4352c;
+  white-space: pre;
+  padding: 0.4rem 3.3rem;
+  text-align: center;
+  border-radius: 23.5rem;
+}
+.title-heading.details-comfortable:first-child, .details-comfortable.title-sub.product-comfortable:first-child {
+  margin-bottom: 2.1rem;
+}
+.title-heading.details-title, .details-title.title-sub.product-comfortable {
+  font-size: 8rem;
+  color: #000000;
+  font-family: "SFU-SHRIF";
+  text-transform: uppercase;
+  letter-spacing: 0.21rem;
+}
+.title-heading.details-offer, .details-offer.title-sub.product-comfortable {
+  font-size: 3.5rem;
+  color: #000000;
+  font-family: "SFU-DIN";
+  text-transform: uppercase;
+  line-height: 1.1428571429;
+}
+.title-heading.details-weight, .details-weight.title-sub.product-comfortable {
+  font-size: 2rem;
+  color: #000000;
+  font-family: "UTM-Avo";
+  text-transform: none;
+  padding-bottom: 1rem;
+}
+.title-heading.details-specifications, .details-specifications.title-sub.product-comfortable {
+  font-size: 6rem;
+  color: #000000;
+  font-family: "SFU-DIN";
+  text-transform: uppercase;
+  line-height: 1.5;
+  margin-bottom: 3.4rem;
+}
+.title-heading.details-engine, .details-engine.title-sub.product-comfortable {
+  font-size: 3.5rem;
+  color: #000000;
+  font-family: "SFU-DIN";
+  text-transform: uppercase;
+  line-height: 1.1428571429;
+  margin-bottom: 1.1rem;
+  position: relative;
+}
+.title-heading.details-engine::before, .details-engine.title-sub.product-comfortable::before {
+  content: "";
+  width: 70%;
+  height: 0.3rem;
+  position: absolute;
+  inset: auto auto 0 50%;
+  margin-bottom: 0.6rem;
+  transform: translate(-40%, -100%);
+  background-color: #000000;
+}
+.title-heading.details-engine::after, .details-engine.title-sub.product-comfortable::after {
+  content: "";
+  width: 3rem;
+  height: 0.6rem;
+  position: absolute;
+  inset: auto 0 0 auto;
+  margin-bottom: 0.6rem;
+  background-color: #000000;
+}
+.title-heading.details-frame, .details-frame.title-sub.product-comfortable, .title-heading.details-size, .details-size.title-sub.product-comfortable {
+  font-size: 3.5rem;
+  color: #000000;
+  font-family: "SFU-DIN";
+  text-transform: uppercase;
+  line-height: 1.1428571429;
+  position: relative;
+}
+.title-heading.details-frame::before, .details-frame.title-sub.product-comfortable::before, .title-heading.details-size::before, .details-size.title-sub.product-comfortable::before {
+  content: "";
+  width: 3rem;
+  height: 0.3rem;
+  position: absolute;
+  inset: auto 0 0 auto;
+  margin-bottom: 0.6rem;
+  transform: translateY(-100%) rotate(90deg);
+  background-color: #000000;
+}
+.title-heading.details-frame::after, .details-frame.title-sub.product-comfortable::after, .title-heading.details-size::after, .details-size.title-sub.product-comfortable::after {
+  content: "";
+  width: 3rem;
+  height: 0.3rem;
+  position: absolute;
+  inset: auto 0 0 auto;
+  margin-bottom: 0.6rem;
+  transform: translateY(-100%);
+  background-color: #000000;
+}
+.title-heading.details-frame:hover::before, .details-frame.title-sub.product-comfortable:hover::before, .title-heading.details-size:hover::before, .details-size.title-sub.product-comfortable:hover::before, .title-heading.details-frame:hover::after, .details-frame.title-sub.product-comfortable:hover::after, .title-heading.details-size:hover::after, .details-size.title-sub.product-comfortable:hover::after {
   background-color: red;
 }
-/*# sourceMappingURL=style.css.map */
+.title-heading.details-frame:nth-last-of-type(2), .details-frame.title-sub.product-comfortable:nth-last-of-type(2), .title-heading.details-size:nth-last-of-type(2), .details-size.title-sub.product-comfortable:nth-last-of-type(2) {
+  margin: 2.7rem 0 2.7rem;
+}
+.title-heading.details-subframe, .details-subframe.title-sub.product-comfortable {
+  width: 60%;
+  height: 0.3rem;
+  position: absolute;
+  inset: auto auto 0 50%;
+  margin-bottom: 0.6rem;
+  transform: translate(-35%, -100%);
+  background-color: #000000;
+}
+.title-heading.details-feature, .details-feature.title-sub.product-comfortable {
+  font-size: 7.3rem;
+  color: #000000;
+  font-family: "D-DIN Condensed";
+  text-transform: uppercase;
+  letter-spacing: 0.39rem;
+  line-height: 1.825;
+  position: relative;
+}
+.title-heading.details-feature span, .details-feature.title-sub.product-comfortable span {
+  font-size: 4.8rem;
+  color: rgba(0, 0, 0, 0.4);
+  font-family: "D-DIN Condensed";
+  text-transform: uppercase;
+  letter-spacing: 0.34rem;
+  line-height: 1.2;
+}
+.title-heading.details-feature::before, .details-feature.title-sub.product-comfortable::before {
+  content: "";
+  width: 100%;
+  height: 0.3rem;
+  position: absolute;
+  inset: 100% auto auto 0;
+  margin-top: -2.2rem;
+  background-color: #000000;
+  transform: translate(-87%, -100%);
+}
+.title-heading.feature-title, .feature-title.title-sub.product-comfortable {
+  font-size: 6rem;
+  color: #000000;
+  font-family: "SFU-DIN";
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.5;
+}
+.title-body.home-product, .details-specifications--weight span.home-product {
+  font-size: 2.2rem;
+  color: #000000;
+  font-family: "UTM-Avo";
+  text-transform: none;
+  margin-top: 1.9rem;
+  letter-spacing: 0.22rem;
+  line-height: 1.8181818182;
+}
+.title-body.vehicle-speed, .details-specifications--weight span.vehicle-speed {
+  font-size: 7.8rem;
+  color: #ffffff;
+  font-family: "D-DIN Condensed";
+  text-transform: uppercase;
+  margin: 1.9rem 0 1.4rem 0;
+  letter-spacing: 0.42rem;
+  line-height: 0.5128205128;
+}
+.title-body.car-comfortable, .details-specifications--weight span.car-comfortable {
+  font-size: 1.3rem;
+  color: #000000;
+  font-family: "SFU-DIN";
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+}
+.title-body.car-adventure, .details-specifications--weight span.car-adventure {
+  font-size: 1.3rem;
+  color: #000000;
+  font-family: "SFU-DIN";
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+}
+.title-body.car-business, .details-specifications--weight span.car-business {
+  font-size: 1.3rem;
+  color: #000000;
+  font-family: "SFU-DIN";
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+}
+.title-body.details-title, .details-specifications--weight span.details-title {
+  font-size: 3rem;
+  color: #000000;
+  font-family: "SVN-Avo";
+  text-transform: none;
+  line-height: 1.3333333333;
+  margin-top: 0.7rem;
+  margin-bottom: 3.2rem;
+}
+.title-body.details-offer, .details-specifications--weight span.details-offer {
+  font-size: 7rem;
+  color: #000000;
+  font-family: "SFU-DIN";
+  text-transform: uppercase;
+  margin-top: 1.5rem;
+  line-height: 0.5714285714;
+}
+.title-body.details-volume, .details-specifications--weight span {
+  font-size: 4.8rem;
+  color: #000000;
+  font-family: "SFU-DIN";
+  text-transform: uppercase;
+  line-height: 0.8333333333;
+}
+.title-body.details-feature, .details-specifications--weight span.details-feature {
+  font-size: 3.5rem;
+  color: #000000;
+  font-family: "SFU-DIN";
+  text-transform: uppercase;
+  line-height: 0.875;
+}
+.title-sub.slider-title {
+  font-size: 1.4rem;
+  color: #ffffff;
+  font-family: "UTM-Avo";
+  text-transform: none;
+  transform: translateX(-25%);
+  letter-spacing: 0.21rem;
+  line-height: 2.8571428571;
+  -ms-writing-mode: tb-lr;
+      writing-mode: vertical-lr;
+}
+.title-sub.home-details, .title-sub.home-network {
+  font-size: 2.5rem;
+  color: #ffffff;
+  font-family: "SFU-DIN";
+  text-transform: uppercase;
+  background-color: #f4352c;
+  letter-spacing: 0.4rem;
+  line-height: 1.6;
+  transition: 0.5s linear;
+  text-decoration: none;
+  border-radius: 1.26rem;
+  padding: 1.2rem 4.9rem 1.8rem 5.4rem;
+}
+.title-sub.home-details:hover, .title-sub.home-network:hover {
+  transition: 0.3s linear;
+  filter: brightness(90%);
+}
+.title-sub.home-network {
+  padding: 1.4rem 11rem 2.2rem 11rem;
+}
+.title-sub.product-comfortable {
+  color: #7f7f7f;
+  border-left: 1px solid #000000;
+  padding-left: 2.5rem;
+  margin-left: 3.1rem;
+}
+.title-sub.product-comfortable::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto auto 0;
+  width: 52%;
+  height: 100%;
+  margin-left: 9.4rem;
+  transform: translateX(100%);
+  border-bottom: 1px solid #000000;
+}
+.title-sub.car-comfortable {
+  font-size: 2.9rem;
+  color: #000000;
+  font-family: "SFU-DIN";
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+}
+.title-sub.car-adventure {
+  font-size: 2.9rem;
+  color: #000000;
+  font-family: "SFU-DIN";
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+}
+.title-sub.car-business {
+  font-size: 2.9rem;
+  color: #000000;
+  font-family: "SFU-DIN";
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+}
+.title-sub.details-wattage {
+  font-size: 3rem;
+  color: #000000;
+  font-family: "SFU-DIN";
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+  line-height: 1.3333333333;
+}
+
+.description-heading.home-mission, .description-heading.title-heading.home-product, .description-heading.title-heading.product-product, .description-heading.home-product.title-sub.product-comfortable, .description-heading.product-product.title-sub.product-comfortable {
+  font-size: 2.2rem;
+  color: #000000;
+  font-family: "UTM-Avo";
+  text-transform: none;
+  padding-top: 2.6rem;
+  white-space: pre-line;
+  line-height: 1.8181818182;
+}
+.description-heading.home-car {
+  font-size: 2.2rem;
+  color: #000000;
+  font-family: "UTM-Avo";
+  text-transform: none;
+  letter-spacing: 0.21rem;
+  line-height: 1.8181818182;
+  padding-bottom: 4.8rem;
+}
+.description-heading.home-news {
+  font-size: 2.2rem;
+  color: #000000;
+  font-family: "UTM-Avo";
+  text-transform: none;
+  margin-top: 1.6rem;
+  letter-spacing: 0.21rem;
+  line-height: 1.8181818182;
+}
+.description-heading.home-details, .description-heading.title-sub.home-network {
+  font-size: 1.6rem;
+  color: #000000;
+  font-family: "UTM-Avo";
+  text-transform: none;
+  display: -webkit-inline-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  word-break: break-all;
+  padding: 0 3.8rem 0 3.2rem;
+  margin-top: 0.8rem;
+  line-height: 1.25;
+}
+.description-heading.home-details.first, .description-heading.first.title-sub.home-network {
+  font-size: 3.5rem;
+  color: #000000;
+  font-family: "D-DIN Condensed";
+  text-transform: uppercase;
+  letter-spacing: unset;
+  white-space: pre-line;
+  margin-top: -0.5rem;
+  line-height: 1.1428571429;
+}
+.description-heading.home-details.seconds, .description-heading.seconds.title-sub.home-network {
+  margin-top: 0.5rem;
+}
+.description-heading.home-network {
+  font-size: 2.2rem;
+  color: #000000;
+  font-family: "UTM-Avo";
+  text-transform: none;
+  margin-top: 1.7rem;
+  letter-spacing: 0.21rem;
+  line-height: 1.8181818182;
+}
+.description-heading.product-product {
+  font-size: 2.2rem;
+  color: #000000;
+  font-family: "UTM-Avo";
+  text-transform: none;
+  margin-top: 4.7rem;
+  white-space: pre-line;
+}
+.description-heading.product-comfortable {
+  font-size: 1.8rem;
+  color: #000000;
+  font-family: "UTM-Avo";
+  text-transform: none;
+  margin-top: 0.8rem;
+  white-space: pre-line;
+}
+.description-heading.product-adventure {
+  font-size: 1.8rem;
+  color: #000000;
+  font-family: "UTM-Avo";
+  text-transform: none;
+  margin-top: 1.4rem;
+  white-space: pre-line;
+}
+.description-heading.product-business {
+  font-size: 1.8rem;
+  color: #000000;
+  font-family: "UTM-Avo";
+  text-transform: none;
+  margin-top: 1.6rem;
+  white-space: pre-line;
+}
+.description-heading.details-title {
+  font-size: 2.2rem;
+  color: #000000;
+  font-family: "UTM-Avo";
+  text-transform: none;
+  width: 50%;
+  white-space: pre-line;
+  position: relative;
+  padding-bottom: 5rem;
+}
+.description-heading.details-title::before {
+  content: "";
+  width: 6.8rem;
+  height: 0.3rem;
+  position: absolute;
+  inset: auto 50% 0 auto;
+  transform: translateX(50%);
+  background-color: #000000;
+}
+.description-heading.details-parameter {
+  font-size: 1.8rem;
+  color: #000000;
+  font-family: "UTM-Avo";
+  text-transform: none;
+  letter-spacing: 0.036rem;
+}
+.description-heading.details-feature {
+  font-size: 2.2rem;
+  color: #000000;
+  font-family: "UTM-Avo";
+  text-transform: none;
+  line-height: 1.3333333333;
+  white-space: pre-line;
+}
+.description-details.home-product {
+  font-size: 1.1rem;
+  color: #ffffff;
+  font-family: "SFU-DIN";
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  line-height: 0.275;
+  transition: 0.5s linear;
+  background-color: #f4352c;
+  border-radius: 1.26rem;
+  padding: 0.5rem 2.2rem 0.9rem 1.8rem;
+  text-decoration: none;
+}
+.description-details.home-product:hover {
+  transition: 0.5s linear;
+  background-color: rgba(244, 53, 44, 0.5);
+}
+.description-details.home-details, .description-details.title-sub.home-network {
+  font-size: 1.6rem;
+  color: #000000;
+  font-family: "UTM-Avo";
+  text-transform: none;
+  letter-spacing: 0.21rem;
+  line-height: 2.5;
+}
+
+.hero {
+  overflow: hidden;
+  position: relative;
+}
+.hero-banner {
+  width: 100%;
+  height: auto;
+}
+.hero-button {
+  position: absolute;
+  inset: 50% 50% auto auto;
+  padding: 3.65rem;
+  transform: translate(50%, 50%);
+  border-radius: 100%;
+}
+.hero-button::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0 0 auto auto;
+  border-radius: 100%;
+  background-color: rgba(244, 53, 44, 0.6);
+}
+.hero-button::after {
+  content: "";
+  width: 73%;
+  height: 73%;
+  position: absolute;
+  inset: 50% 50% auto auto;
+  transform: translate(50%, -50%);
+  border-radius: 100%;
+  background-color: rgba(244, 53, 44, 0.5);
+}
+.hero-button:hover {
+  transition: 0.5s linear;
+  outline: 0.5rem dashed rgba(244, 53, 44, 0.2);
+}
+.hero-button:hover::before {
+  transition: 0.5s linear;
+  opacity: 0;
+}
+.hero-circle {
+  transition: 0.5s linear;
+  position: relative;
+  z-index: 10;
+}
+
+.slider {
+  position: absolute;
+  inset: 0 0 0 0;
+}
+.slider-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 7.8rem;
+}
+.slider-page.prev, .slider-page.home-btn.next {
+  font-size: 7.4rem;
+  color: #ffffff;
+  font-family: "D-DIN Condensed";
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+  line-height: 0.5405405405;
+}
+.slider-page.next {
+  font-size: 4.9rem;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: "D-DIN Condensed";
+  text-transform: uppercase;
+  letter-spacing: 0.35rem;
+  line-height: 0.8163265306;
+}
+
+.header {
+  width: 100%;
+  height: 6.3rem;
+  z-index: 10;
+  position: fixed;
+}
+
+.logo-img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.footer {
+  background-color: #000000;
+}
+
+.main {
+  overflow: hidden;
+}
+
+.home-page {
+  position: absolute;
+  inset: auto auto 0 auto;
+  transform: translateX(-50%);
+  display: flex;
+  background-color: #f4352c;
+}
+.home-page::before {
+  content: "";
+  position: absolute;
+  inset: 50% auto auto 50%;
+  width: 3px;
+  height: 70%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+}
+.home-btn.prev, .home-btn.next {
+  padding: 2.5rem 2.5rem 2rem 2.2rem;
+  transition: 0.5s linear;
+}
+.home-btn.prev:hover, .home-btn.next:hover {
+  transition: 0.5s linear;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.home-image.mission {
+  max-width: 100%;
+  max-height: 100%;
+}
+.home-image.candy-50, .home-image.like-50, .home-image.product-image.whitelike-50, .home-image.product-image.whitecandy-50, .home-image.product-image.people-125, .home-image.product-image.feature, .home-image.product-image.pipe-50, .home-image.product-image.pipe2-125, .home-image.product-image.ak-550, .home-image.pipe-125 {
+  max-width: 100%;
+  max-height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  transition: 0.3s linear;
+}
+.home-image.candy-50:hover, .home-image.like-50:hover, .home-image.product-image.whitelike-50:hover, .home-image.product-image.whitecandy-50:hover, .home-image.product-image.people-125:hover, .home-image.product-image.feature:hover, .home-image.product-image.pipe-50:hover, .home-image.product-image.pipe2-125:hover, .home-image.product-image.ak-550:hover, .home-image.pipe-125:hover {
+  transition: 0.3s linear;
+  filter: brightness(80%);
+  transform: scale(1.05);
+}
+.home-image.multiplecar {
+  max-width: 100%;
+  max-height: 100%;
+}
+.home-image.home-details, .home-image.title-sub.home-network {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.home-image.home-details:hover, .home-image.title-sub.home-network:hover {
+  transform: scale(1.2);
+  transition: 0.5s linear;
+}
+.home-image.network-banner {
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.home-image.network-grid {
+  position: absolute;
+  inset: 50% auto auto 50%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  transform: translate(-50%, -25%);
+}
+.home-mission--list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: auto;
+  padding-top: 10rem;
+  position: relative;
+}
+.home-mission--content {
+  position: absolute;
+  inset: auto auto auto 0;
+  transform: translateX(50%);
+}
+.home-product--list {
+  padding: 11.5rem 0 12rem 0;
+  text-align: center;
+}
+.home-product--content {
+  position: absolute;
+  inset: 0 0 auto 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: auto;
+  align-items: flex-start;
+  padding: 1.7rem 0 0 2rem;
+}
+.home-product--layout {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  max-height: 100%;
+  margin: 7.4rem 0 9rem 0;
+}
+.home-product--item {
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+.home-product--item:not(:first-child) {
+  margin-left: 6.7rem;
+}
+.home-product--item:nth-child(2) .home-product--content {
+  padding: 1.7rem 0 0 4.6rem;
+}
+.home-car--list {
+  position: relative;
+}
+.home-car--content {
+  position: absolute;
+  inset: 0 0 0 0;
+  padding: 4.5rem 0 0 21.3rem;
+}
+.home-news--list {
+  text-align: center;
+  padding: 12.4rem 0 13.2rem 0;
+}
+.home-news--layout {
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+  -moz-column-gap: 2.9rem;
+       column-gap: 2.9rem;
+  margin: 7rem 0 7rem 0;
+  justify-content: center;
+}
+.home-news--item {
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+  box-shadow: 0px 0px 1px 0px #000000;
+}
+.home-news--image {
+  overflow: hidden;
+  position: relative;
+}
+.home-news--content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: auto;
+  padding: 1rem 0 2rem 0;
+}
+.home-network--list {
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+.home-network--content {
+  position: absolute;
+  inset: 0 0 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: auto;
+  padding: 4.6rem 0 8.8rem 0;
+}
+.home-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: auto;
+  align-items: center;
+  padding: 2.1rem 0 3.9rem;
+}
+.home-contact--list {
+  display: flex;
+  flex-direction: row;
+  justify-content: auto;
+  align-items: auto;
+}
+.home-contact--icon img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.home-contact--icon img:first-child {
+  margin-right: 2.6rem;
+}
+.home-contact--item {
+  font-size: 1.6rem;
+  color: #ffffff;
+  font-family: "UTM-Avo";
+  text-transform: uppercase;
+  position: relative;
+  margin: 6.5rem 0 3.4rem 0;
+  letter-spacing: 0.21rem;
+  line-height: 2.5;
+  padding: 0 1.6rem;
+}
+.home-contact--item:not(:first-child)::before {
+  content: "";
+  width: 1px;
+  height: 50%;
+  position: absolute;
+  inset: 50% auto auto 0;
+  transform: translateY(-50%);
+  background-color: #ffffff;
+}
+.home-contact--copyright {
+  font-size: 1.6rem;
+  color: #ffffff;
+  font-family: "UTM-Avo";
+  text-transform: none;
+  letter-spacing: 0.21rem;
+  line-height: 2.5;
+}
+
+.product-title {
+  text-align: center;
+  padding-top: 7.4rem;
+}
+.product-image.like-50, .product-image.whitelike-50, .product-image.whitecandy-50, .product-image.people-125, .product-image.feature, .product-image.pipe-50, .product-image.pipe2-125, .product-image.ak-550 {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.product-image.whitelike-50, .product-image.whitecandy-50, .product-image.people-125, .product-image.feature, .product-image.pipe-50, .product-image.pipe2-125, .product-image.ak-550 {
+  transform: translateY(-10%);
+}
+.product-image.ak2-550 {
+  max-width: 100%;
+  max-height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.product-comfortable--title {
+  padding-left: 12.5rem;
+  display: flex;
+  position: relative;
+}
+.product-comfortable--list {
+  padding: 0 13rem 0 12.5rem;
+}
+.product-comfortable--grid {
+  display: inline-grid;
+  grid-template-columns: repeat(3, 1fr);
+  -moz-column-gap: 5rem;
+       column-gap: 5rem;
+  margin-top: 6rem;
+}
+.product-comfortable--item {
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+  position: relative;
+}
+.product-comfortable--item:hover .product-comfortable--details {
+  transition: 0.5s linear;
+  opacity: 1;
+}
+.product-comfortable--layout {
+  display: flex;
+  flex-direction: row;
+  justify-content: auto;
+  align-items: auto;
+  margin-top: 11rem;
+  -webkit-clip-path: polygon(7% 0, 100% 0, 91% 100%, 0% 100%);
+          clip-path: polygon(7% 0, 100% 0, 91% 100%, 0% 100%);
+  background-color: #f8f8f8;
+}
+.product-comfortable--right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 0 14.5rem 3rem 3rem;
+}
+.product-comfortable--bottom {
+  padding-left: 1.4rem;
+  position: relative;
+}
+.product-comfortable--bottom::before {
+  content: "";
+  width: 3px;
+  height: 100%;
+  position: absolute;
+  inset: auto auto 0 0;
+  background-color: #000000;
+}
+.product-comfortable--details {
+  display: flex;
+  flex-direction: column;
+  justify-content: auto;
+  align-items: auto;
+  position: absolute;
+  inset: auto auto 0 auto;
+  opacity: 0;
+}
+.product-comfortable--list {
+  position: relative;
+  padding-top: 17rem;
+}
+.product-comfortable--button {
+  position: absolute;
+  inset: auto 7% 0 auto;
+  padding: 1.6rem 4.2rem 1.4rem 0;
+  transform: skew(-10deg) translate(-100%, -100%);
+  background-color: #f4352c;
+  transition: 0.3s linear;
+}
+.product-comfortable--button:hover {
+  filter: brightness(90%);
+  transition: 0.3s linear;
+}
+.product-adventure--list {
+  padding: 15rem 12.5rem;
+}
+.product-adventure--layout {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  -webkit-clip-path: polygon(10% 0, 100% 0, 91% 100%, 0% 100%);
+          clip-path: polygon(10% 0, 100% 0, 91% 100%, 0% 100%);
+  background-color: #f8f8f8;
+}
+.product-adventure--grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  -moz-column-gap: 3.4rem;
+       column-gap: 3.4rem;
+  margin-top: 6.1rem;
+}
+.product-adventure--item {
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+}
+.product-adventure--content {
+  padding: 0 0 3rem 17rem;
+}
+.product-adventure--bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: auto;
+  align-items: auto;
+  margin-top: 1.2rem;
+  padding-left: 1rem;
+  position: relative;
+}
+.product-adventure--bottom::before {
+  content: "";
+  width: auto;
+  height: 100%;
+  position: absolute;
+  inset: auto auto 0 0;
+  border-left: 0.2rem solid #000000;
+}
+.product-business--list {
+  padding: 0 12.5rem 7.9rem 12.5rem;
+}
+.product-business--layout {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  -webkit-clip-path: polygon(10% 0, 100% 0, 91% 100%, 2% 100%);
+          clip-path: polygon(10% 0, 100% 0, 91% 100%, 2% 100%);
+  background-color: #f8f8f8;
+}
+.product-business--grid {
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+  margin-top: 8.2rem;
+}
+.product-business--item {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+.product-business--content {
+  padding: 0 0 3rem 3.2rem;
+  flex: 1;
+}
+.product-business--bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: auto;
+  align-items: auto;
+  position: relative;
+  padding-left: 1rem;
+}
+.product-business--bottom::before {
+  content: "";
+  width: auto;
+  height: 100%;
+  position: absolute;
+  inset: auto auto 0 0;
+  border-left: 0.2rem solid #000000;
+}
+
+.details-image.pipe4-125, .details-image.pipe5-125 {
+  max-width: 100%;
+  max-height: 100%;
+  margin: 6.1rem 0 2rem 0;
+}
+.details-image.feature {
+  width: 100%;
+  height: 100%;
+}
+.details-title--content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5.5rem;
+  text-align: center;
+}
+.details-square {
+  padding: 2.5rem;
+}
+.details-square--list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3.1rem;
+}
+.details-square:nth-child(1) {
+  background-color: #000000;
+}
+.details-square:nth-child(2) {
+  margin: 0 1.9rem;
+  border: 1px solid #000000;
+}
+.details-square:nth-child(3) {
+  background-color: #f4352c;
+}
+.details-specifications--title {
+  text-align: center;
+  padding-top: 5rem;
+}
+.details-specifications--layout {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4.3rem;
+  padding-right: 4.3rem;
+  margin-top: 13.3rem;
+}
+.details-specifications--image {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: flex-end;
+  background-color: #f1f1f1;
+  padding: 4.8rem 3.6rem 8.4rem 5.4rem;
+}
+.details-specifications--weight {
+  position: relative;
+  padding-left: 1.4rem;
+}
+.details-specifications--weight:nth-child(2) {
+  margin-left: 6rem;
+}
+.details-specifications--weight::before {
+  content: "";
+  width: 0.3rem;
+  height: 100%;
+  position: absolute;
+  inset: auto auto 0 0;
+  background-color: #000000;
+}
+.details-specifications--weight span {
+  margin-left: 0.7rem;
+}
+.details-specifications--horizontal {
+  padding-left: 7.2rem;
+}
+.details-specifications--finally {
+  position: relative;
+  margin-bottom: 7.2rem;
+  transform: translate(-50%, 0%);
+  grid-column-start: 3;
+}
+.details-specifications--linefinally {
+  font-size: 3rem;
+  color: #000000;
+  font-family: "SFU-DIN";
+  text-transform: uppercase;
+  position: absolute;
+  inset: 50% 0 auto auto;
+  transform: translate(100%, -50%);
+  line-height: 1.3333333333;
+  -ms-writing-mode: tb-lr;
+      writing-mode: vertical-lr;
+  white-space: pre;
+}
+.details-specifications--content {
+  display: flex;
+  flex-direction: column;
+  justify-content: auto;
+  align-items: auto;
+}
+.details-specifications--parameter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: auto;
+}
+.details-specifications--parameter ul li {
+  margin-top: 1.8rem;
+}
+.details-specifications--parameter ul:nth-child(2) {
+  text-align: right;
+}
+.details-feature--list {
+  position: relative;
+  margin-bottom: 12rem;
+}
+.details-feature--layout {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.details-feature--button {
+  position: absolute;
+  inset: auto auto 0 0;
+  display: flex;
+  background-color: #f4352c;
+  transform: translateX(-50%);
+}
+.details-feature--button::before {
+  content: "";
+  position: absolute;
+  inset: 50% 50% auto auto;
+  width: 0.3rem;
+  height: 70%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+}
+.details-feature--content {
+  position: absolute;
+  inset: 50% auto auto 50%;
+  padding-right: 5.6rem;
+  transform: translate(-100%, -50%);
+}
+.details-feature--item {
+  grid-column: 2;
+  position: relative;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,162 @@
+.details{
+
+    &-image{
+        &.pipe4-125,
+        &.pipe5-125{
+            @include max-width(100%, 100%);
+
+            margin: calc(6.6rem - 0.5rem) 0 2rem 0;
+        }
+        &.feature{
+            @include width(100%, 100%);
+        }
+    }
+
+    &-title{
+        &--content{
+            @include flexbox(flex, column, center, center);
+
+            padding-top: calc(7.5rem - 2rem);
+            text-align: center;
+        }
+    }
+
+    &-square{
+        &--list{
+            @include flexbox(flex, row, center, center);
+
+            padding-top: calc(7.8rem - 4.7rem);
+        }
+
+        padding: 2.5rem;
+
+        &:nth-child(1){
+            background-color: $cltext-light-black;
+        }
+        &:nth-child(2){
+            margin: 0 1.9rem;
+            border: 1px solid $cltext-light-black;
+        }
+        &:nth-child(3){
+            background-color: $cltext-light-pink;
+        }
+    }
+
+    &-specifications{
+        // title
+        &--title{
+            text-align: center;
+            padding-top: 5rem;
+        }
+        // layout
+        &--layout{
+            @include grid(grid, "columns", 2, 1fr);
+
+            gap: 4.3rem;
+            padding-right: 4.3rem;
+
+            margin-top: calc(12rem + 1.3rem);
+        }
+        &--image{
+            @include grid(grid, "columns", 2, 1fr);
+            
+            align-items: flex-end;
+            background-color: $cltext-light-silver;
+            padding: calc(5rem - 0.2rem) calc(3rem + 0.6rem) calc(9.2rem - 0.8rem) 5.4rem;
+        }
+        // car
+        &--weight{
+            position: relative;
+            padding-left: 1.4rem;
+
+            &:nth-child(2){
+                margin-left: calc(6.7rem - 0.7rem);
+            }
+            &::before{
+                content: "";
+                @include width(0.3rem, 100%);
+                @include position(absolute, auto, 0, 0, auto);
+
+                background-color: $cltext-light-black;
+            }
+ 
+            span{
+                @extend .title-body, .details-volume;
+
+                margin-left: calc(1.9rem - 1.2rem);
+            }
+        }
+        &--horizontal{
+            padding-left: 7.2rem;
+        }
+        &--finally{
+            position: relative;
+            margin-bottom: calc(4.2rem + 3rem);
+
+            transform: translate(-50%, -0%);
+            grid-column-start: 3;
+        }
+        &--linefinally{
+            @include font(3rem, $cltext-light-black, "SFU-DIN", uppercase);
+            @include position(absolute, 50%, auto, auto, 0);
+            
+            transform: translate(100%, -50%);
+            line-height: calc(40 / 30);
+
+            writing-mode: vertical-lr;
+            white-space: pre;
+        }
+        // content
+        &--content{
+            @include flexbox(flex, column, auto, auto);
+        }
+        &--parameter{
+            @include flexbox(flex, row, space-between, auto);
+
+            ul{
+                li{
+                    margin-top: calc(1.8rem);
+                }
+                &:nth-child(2){
+                    text-align: right;
+                }
+            }
+        }
+    }
+
+    &-feature{
+        &--list{
+            position: relative;
+            margin-bottom: 12rem;
+        }
+        &--layout{
+            @include grid(grid, "columns", 2, 1fr);
+        }
+        &--button{
+            @include position(absolute, auto, 0, 0, auto);
+
+            display: flex;
+            background-color: $cltext-light-pink;
+            transform: translateX(-50%);
+
+            &::before{
+                content: "";
+                @include position(absolute, 50%, auto, auto, 50%);
+                @include width(0.3rem, 70%);
+
+                transform: translate(-50%, -50%);
+                background-color: $cltext-light-white;
+            }
+        }
+        &--content{
+            @include position(absolute, 50%, 50%, auto, auto);
+
+            padding-right: 5.6rem;
+            transform: translate(-100%, -50%);
+        }
+        &--item{
+            grid-column: 2;
+            position: relative;
+        }
+    }
+}

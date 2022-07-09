@@ -1,0 +1,21 @@
+.nav{
+    &-header{
+        &.nav{
+            @include flexbox(flex, row, space-between, center);
+            @include width(100%, 100%);
+        }
+        &.item{
+            display: inline-block;
+        }
+        &.list{
+            
+            &:nth-child(2){
+                .nav-header.item{
+                    &:not(:first-child){
+                        margin-left: 5.2rem;
+                    }
+                }
+            }
+        }
+    }
+}

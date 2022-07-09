@@ -1,0 +1,195 @@
+.product{
+    &-title{
+        text-align: center;
+        padding-top: calc(6rem + 1.4rem);
+    }
+
+    &-image{
+        &.like-50{
+            @include width(100%, 100%);
+            @include max-width(100%, 100%);
+            object-fit: contain;
+        }
+        &.whitelike-50,
+        &.whitecandy-50,
+        &.people-125,
+        &.feature,
+        &.pipe-50,
+        &.pipe2-125,
+        &.ak-550{
+            @extend .like-50;
+        
+            transform: translateY(-10%);
+        }
+        &.ak2-550{
+            @include max-width(100%, 100%);
+            object-fit: contain;
+        }
+    }
+
+    &-comfortable{
+        // title
+        &--title{
+            padding-left: 12.5rem;
+            display: flex;
+            position: relative;
+        }
+        //layout grid
+        &--list{
+            padding: 0 13rem 0 12.5rem;
+        }
+        &--grid{
+            @include grid(inline-grid, "columns", 3, 1fr);
+
+            column-gap: calc(5.5rem - 0.5rem);
+            margin-top: calc(6.5rem - 0.5rem);
+        }
+        &--item{
+            @include grid(grid, "rows", 1, 1fr);
+
+            position: relative;
+
+            &:hover{
+                .product-comfortable--details{
+                    transition: 0.5s linear;
+                    opacity: 1;
+                }
+            }
+        }
+        &--layout{
+            @include flexbox(flex, row, auto, auto);
+
+            margin-top: calc(12rem - 1rem);
+            clip-path: polygon(7% 0, 100% 0, 91% 100%, 0% 100%);
+            background-color: $cltext-light-smoke;
+        }
+        // division
+        &--right{
+            @include flexbox(flex, column, flex-end, flex-start);
+
+            padding: 0 calc(4rem * 4 - 1.5rem) 3rem calc(3.2rem - 0.2rem);
+        }
+        //car 
+        &--bottom{
+            padding-left: 1.4rem;
+            position: relative;
+
+            &::before{
+                content: "";
+                @include width(3px, 100%);
+                @include position(absolute, auto, 0, 0, auto);
+
+                background-color: $cltext-light-black
+            }
+        }
+        //details
+        &--details{
+            @include flexbox(flex, column, auto, auto);
+            @include position(absolute, auto, auto, 0, auto);
+
+            opacity: 0;
+        }
+        &--list{
+            position: relative;
+            padding-top: 17rem;
+        }
+        //button
+        &--button{
+            @include position(absolute, auto, auto, 0, 7%);
+
+            padding: calc(1.8rem - 0.2rem) calc(4.8rem - 0.6rem) calc(1.6rem - 0.2rem) 0;
+
+            transform: skew(-10deg) translate(-100%, -100%);
+            background-color: $cltext-light-pink;
+            transition: 0.3s linear;
+
+            &:hover{
+                filter: brightness(90%);
+                transition: 0.3s linear;
+            }
+        }
+    }
+
+    &-adventure{
+        //layout
+        &--list{
+            padding: 15rem 12.5rem;
+        }
+        &--layout{
+            @include flexbox(flex, row, space-between, flex-end);
+
+            clip-path: polygon(10% 0, 100% 0, 91% 100%, 0% 100%);
+            background-color: $cltext-light-smoke;
+        }
+        &--grid{
+            @include grid(grid, "columns", 2, 1fr);
+        
+            column-gap: calc(6.1rem - 2.7rem);
+            margin-top: 6.1rem;
+        }
+        &--item{
+            @include grid(grid, "rows", 1, 1fr);
+        }
+        // content
+        &--content{
+            padding: 0 0 3rem calc(13rem + 4rem);
+        }
+        //bottom 
+        &--bottom{
+            @include flexbox(flex, column, auto, auto);
+            
+            margin-top: 1.2rem;
+            padding-left: 1rem;
+            position: relative;
+            
+            &::before{
+                content: "";
+                @include width(auto, 100%);
+                @include position(absolute, auto, 0, 0, auto);
+
+                border-left: 0.2rem solid $cltext-light-black;
+            }
+        }
+    }
+
+    &-business{
+        //layout
+        &--list{
+            padding: 0 12.5rem 7.9rem 12.5rem;
+        }
+        &--layout{
+            @include flexbox(flex, row, center, flex-end);
+
+            clip-path: polygon(10% 0, 100% 0, 91% 100%, 2% 100%);
+            background-color: $cltext-light-smoke
+        }
+        &--grid{
+            @include grid(grid, "rows", 1, 1fr);
+
+            margin-top: calc(8.4rem - 0.2rem);
+        }
+        &--item{
+            @include grid(grid, "columns", 1, 1fr);
+        }
+        //content
+        &--content{
+            padding: 0 0 3rem calc(3.4rem - 0.2rem);
+            flex: 1;    
+        }
+        //bottom
+        &--bottom{
+            @include flexbox(flex, column, auto, auto);
+            
+            position: relative;
+            padding-left: 1rem;
+
+            &::before{
+                content: "";
+                @include width(auto, 100%);
+                @include position(absolute, auto, 0, 0, auto);
+
+                border-left: 0.2rem solid $cltext-light-black;
+            }
+        }
+    }
+}

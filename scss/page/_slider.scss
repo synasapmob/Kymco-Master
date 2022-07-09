@@ -1,0 +1,24 @@
+.slider{
+    @include position(absolute, 0, 0, 0, 0);
+
+    &-list{
+        @include flexbox(flex, row, space-between, flex-end);
+        @include width(100%, 100%);
+
+        padding-bottom: calc(5.6rem + 2.2rem);
+    }
+    &-page{
+        &.prev{
+            @include font(7.4rem, $cltext-light-white, "D-DIN Condensed", uppercase);
+
+            letter-spacing: 0.4rem;
+            line-height: calc(40 / 74);
+        }
+        &.next{
+            @include font(4.9rem, rgba($cltext-light-white, 0.5), "D-DIN Condensed", uppercase);
+            
+            letter-spacing: 0.35rem;
+            line-height: calc(40 / 49);
+        }
+    }
+}
