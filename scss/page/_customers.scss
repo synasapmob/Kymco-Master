@@ -1,0 +1,65 @@
+.customers{
+    &-layout{
+        @include flexbox(flex, row, auto, auto);
+
+        padding: 14rem 0 34.5rem 0;
+    }
+
+    &-image{
+        position: relative;
+
+        &::before{
+            content: "";
+            @include width(16.7rem, 1.1rem);
+            @include position(absolute, 0, auto, auto, 0);
+
+            transform: translateX(100%);
+            margin: 5.5rem 3.3rem 0 0;
+            background-color: $cltext-light-black;
+        }
+
+        img{
+            @include width(100%, 100%);
+
+            object-fit: cover;
+        }
+    }
+    &-product{
+        padding: calc(9rem - 0.9rem) 0 0 calc(9.4rem - 0.1rem);
+    }
+    &-grid{
+        @include grid(grid, "columns", 2, 1fr);
+        @include grid(grid, "rows", 4, 1fr);
+
+        gap: calc(5.8rem - 1rem) 6.8rem;
+        padding-top: 7.8rem;
+    }
+    &-row{
+        position: relative;
+
+        &:nth-child(3){
+            grid-column: span 2;
+        }
+    }
+    &-input{
+        @include font(2.2rem, $cltext-light-grey, "UTM-Avo", none);
+        @include width(100%, 100%);
+
+        border: none;
+        border-bottom: 0.2rem solid $cltext-light-black;
+        outline: none;
+
+        padding-bottom: 1rem;
+        line-height: calc(40 / 22);
+    }
+    &-arrow{
+        @include position(absolute, 50%, auto, auto, 0);        
+        transform: translateY(-50%);
+    }
+    &-submit{
+        @extend .title-sub, .home-details;
+        @include border(3.1rem, 0, none, transparent);
+
+        margin-top: 5rem;
+    }
+}

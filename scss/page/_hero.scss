@@ -5,7 +5,12 @@
     &-banner{
         @include width(100%, auto);
     }
+    &-content{
+        @include position(absolute, 50%, 50%, auto, auto);
 
+        text-align: center;
+        transform: translate(-50%, -50%);
+    }
     &-button{
         @include position(absolute, 50%, auto, auto, 50%);
         

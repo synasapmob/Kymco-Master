@@ -1,0 +1,61 @@
+.service{
+
+    &-container{
+        padding: calc(10.4rem - 0.8rem) 25.4rem calc(10.4rem - 0.8rem);
+    }
+    &-layout{
+        @include flexbox(flex, row, auto, auto);
+    }
+}
+
+.faq{
+    &-list{
+        @include flexbox(inline-flex, column, auto, auto);
+
+        padding: calc(4.1rem - 1.2rem) 2.6rem calc(4.3rem - 0.7rem) calc(4rem * 2 - 1.1rem);;
+        background-color: $cltext-light-pink;
+        overflow: hidden;
+    }
+
+    &-item{
+        @include font(3rem, $cltext-light-white, "SFU-DIN", uppercase);
+        @include width(100%, auto);
+
+        letter-spacing: 0.050rem;
+        line-height: calc(40 / 30);
+        position: relative;
+
+        transition: 0.25s linear;
+        list-style: square;
+
+        &::marker{
+            font-size: 2rem;
+        }
+        &::before{
+            content: "";
+            @include width(25%, 0.6rem);
+            @include position(absolute, 45%, -55%, auto, auto);
+
+            transform: translate(0%, 100%);
+            background-color: $cltext-light-white;
+            transition: 0.25s linear;
+        }
+        &.active{
+            &::before{
+                content: "";
+                display: inline-block;
+                visibility: unset;
+                transform: translate(100%, 100%);
+            }
+        }
+        &:hover{
+            @extend .active;
+        }
+    }
+
+    &-content{
+        flex: 1;
+        margin-left: 12.8rem;
+        padding-bottom: 1.5rem;
+    }
+}

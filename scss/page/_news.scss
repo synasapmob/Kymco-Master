@@ -1,0 +1,83 @@
+.news{
+    &-layout{
+        padding: 13rem 0 12rem 0;
+    }
+    &-grid{
+        @include grid(grid, "columns", 3, 35rem);
+
+        justify-content: center;
+        column-gap: 3rem;
+        row-gap: 5.5rem;
+    }
+    &-image{
+        overflow: hidden;
+
+        img{
+            @include width(100%, 100%);
+
+            object-fit: cover;
+            transition: 0.3s linear;
+
+            &:hover{
+                transform: scale(1.2);
+            }
+        }
+    }
+    &-griditem{
+        @include grid(grid, "rows", 2, 1fr);
+
+        outline: 0.1rem solid rgba($cltext-light-black, 0.1);
+    }
+    &-content{
+        @include flexbox(flex, column, auto, auto);
+
+        text-align: center;
+    }
+    
+    &-number{
+        @include font(3.1rem, $cltext-light-black, "SFU-DIN", none);
+        
+        padding: calc(2rem - 1.3rem) calc(2.5rem - 0.5rem);
+        outline: 0.1rem solid $cltext-light-black;
+        display: inline-block;
+        line-height: calc(40 / 31);
+
+        &:nth-child(2){
+            margin: 0 calc(1.6rem - 0.3rem)
+        }
+
+        &.active{
+            outline: none;
+            background-color: $cltext-light-pink;
+            color: $cltext-light-white;
+        }
+    }
+    &-list{
+        margin: 0 calc(2rem + 0.2rem);
+    }
+    &-page{
+        @include flexbox(flex, row, center, center);
+
+        margin-top: 8rem;
+
+        &--prev{
+            @include font(2rem, $cltext-light-black, "Arial", none);
+
+            font-weight: bold;
+            line-height: calc(40 / 20);
+            
+            padding: calc(2rem - 1.3rem) calc(1.1rem - 0.2rem);
+            outline: 0.1rem solid $cltext-light-black;
+            transition: 0.3s ease;
+
+            &:hover{
+                outline: none;
+                background-color: $cltext-light-pink;
+                color: $cltext-light-white;
+
+                cursor: pointer;
+                user-select: none;
+            }
+        }
+    }
+}

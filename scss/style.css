@@ -101,7 +101,7 @@ body {
   transform: translateX(-25%);
 }
 
-.nav-header.nav, .nav.title-heading.dealer, .nav.dealer.title-sub.product-comfortable, .nav.title-heading.customers, .nav.customers.title-sub.product-comfortable {
+.nav-header.nav, .nav.title-heading.dealer, .nav.dealer.title-sub.product-comfortable, .nav.dealer.product-comfortable.customers-submit, .nav.title-heading.customers, .nav.customers.title-sub.product-comfortable, .nav.customers.product-comfortable.customers-submit {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -109,14 +109,14 @@ body {
   width: 100%;
   height: 100%;
 }
-.nav-header.item, .item.title-heading.dealer, .item.dealer.title-sub.product-comfortable, .item.title-heading.customers, .item.customers.title-sub.product-comfortable {
+.nav-header.item, .item.title-heading.dealer, .item.dealer.title-sub.product-comfortable, .item.dealer.product-comfortable.customers-submit, .item.title-heading.customers, .item.customers.title-sub.product-comfortable, .item.customers.product-comfortable.customers-submit {
   display: inline-block;
 }
-.nav-header.list:nth-child(2) .nav-header.item:not(:first-child), .list.title-heading.dealer:nth-child(2) .nav-header.item:not(:first-child), .list.dealer.title-sub.product-comfortable:nth-child(2) .nav-header.item:not(:first-child), .list.title-heading.customers:nth-child(2) .nav-header.item:not(:first-child), .list.customers.title-sub.product-comfortable:nth-child(2) .nav-header.item:not(:first-child), .nav-header.list:nth-child(2) .item.title-heading.dealer:not(:first-child), .nav-header.list:nth-child(2) .item.dealer.title-sub.product-comfortable:not(:first-child), .nav-header.list:nth-child(2) .item.title-heading.customers:not(:first-child), .nav-header.list:nth-child(2) .item.customers.title-sub.product-comfortable:not(:first-child), .list.title-heading.dealer:nth-child(2) .item.title-heading.dealer:not(:first-child), .list.dealer.title-sub.product-comfortable:nth-child(2) .item.title-heading.dealer:not(:first-child), .list.title-heading.dealer:nth-child(2) .item.dealer.title-sub.product-comfortable:not(:first-child), .list.dealer.title-sub.product-comfortable:nth-child(2) .item.dealer.title-sub.product-comfortable:not(:first-child), .list.title-heading.customers:nth-child(2) .item.title-heading.dealer:not(:first-child), .list.customers.title-sub.product-comfortable:nth-child(2) .item.title-heading.dealer:not(:first-child), .list.title-heading.customers:nth-child(2) .item.dealer.title-sub.product-comfortable:not(:first-child), .list.customers.title-sub.product-comfortable:nth-child(2) .item.dealer.title-sub.product-comfortable:not(:first-child), .list.title-heading.dealer:nth-child(2) .item.title-heading.customers:not(:first-child), .list.dealer.title-sub.product-comfortable:nth-child(2) .item.title-heading.customers:not(:first-child), .list.title-heading.dealer:nth-child(2) .item.customers.title-sub.product-comfortable:not(:first-child), .list.dealer.title-sub.product-comfortable:nth-child(2) .item.customers.title-sub.product-comfortable:not(:first-child), .list.title-heading.customers:nth-child(2) .item.title-heading.customers:not(:first-child), .list.customers.title-sub.product-comfortable:nth-child(2) .item.title-heading.customers:not(:first-child), .list.title-heading.customers:nth-child(2) .item.customers.title-sub.product-comfortable:not(:first-child), .list.customers.title-sub.product-comfortable:nth-child(2) .item.customers.title-sub.product-comfortable:not(:first-child) {
+.nav-header.list:nth-child(2) .nav-header.item:not(:first-child), .list.title-heading.dealer:nth-child(2) .nav-header.item:not(:first-child), .list.dealer.title-sub.product-comfortable:nth-child(2) .nav-header.item:not(:first-child), .list.dealer.product-comfortable.customers-submit:nth-child(2) .nav-header.item:not(:first-child), .list.title-heading.customers:nth-child(2) .nav-header.item:not(:first-child), .list.customers.title-sub.product-comfortable:nth-child(2) .nav-header.item:not(:first-child), .list.customers.product-comfortable.customers-submit:nth-child(2) .nav-header.item:not(:first-child), .nav-header.list:nth-child(2) .item.title-heading.dealer:not(:first-child), .nav-header.list:nth-child(2) .item.dealer.title-sub.product-comfortable:not(:first-child), .nav-header.list:nth-child(2) .item.dealer.product-comfortable.customers-submit:not(:first-child), .nav-header.list:nth-child(2) .item.title-heading.customers:not(:first-child), .nav-header.list:nth-child(2) .item.customers.title-sub.product-comfortable:not(:first-child), .nav-header.list:nth-child(2) .item.customers.product-comfortable.customers-submit:not(:first-child), .list.title-heading.dealer:nth-child(2) .item.title-heading.dealer:not(:first-child), .list.dealer.title-sub.product-comfortable:nth-child(2) .item.title-heading.dealer:not(:first-child), .list.dealer.product-comfortable.customers-submit:nth-child(2) .item.title-heading.dealer:not(:first-child), .list.title-heading.dealer:nth-child(2) .item.dealer.title-sub.product-comfortable:not(:first-child), .list.title-heading.dealer:nth-child(2) .item.dealer.product-comfortable.customers-submit:not(:first-child), .list.dealer.title-sub.product-comfortable:nth-child(2) .item.dealer.title-sub.product-comfortable:not(:first-child), .list.dealer.product-comfortable.customers-submit:nth-child(2) .item.dealer.title-sub.product-comfortable:not(:first-child), .list.dealer.title-sub.product-comfortable:nth-child(2) .item.dealer.product-comfortable.customers-submit:not(:first-child), .list.dealer.product-comfortable.customers-submit:nth-child(2) .item.dealer.product-comfortable.customers-submit:not(:first-child), .list.title-heading.customers:nth-child(2) .item.title-heading.dealer:not(:first-child), .list.customers.title-sub.product-comfortable:nth-child(2) .item.title-heading.dealer:not(:first-child), .list.customers.product-comfortable.customers-submit:nth-child(2) .item.title-heading.dealer:not(:first-child), .list.title-heading.customers:nth-child(2) .item.dealer.title-sub.product-comfortable:not(:first-child), .list.title-heading.customers:nth-child(2) .item.dealer.product-comfortable.customers-submit:not(:first-child), .list.customers.title-sub.product-comfortable:nth-child(2) .item.dealer.title-sub.product-comfortable:not(:first-child), .list.customers.product-comfortable.customers-submit:nth-child(2) .item.dealer.title-sub.product-comfortable:not(:first-child), .list.customers.title-sub.product-comfortable:nth-child(2) .item.dealer.product-comfortable.customers-submit:not(:first-child), .list.customers.product-comfortable.customers-submit:nth-child(2) .item.dealer.product-comfortable.customers-submit:not(:first-child), .list.title-heading.dealer:nth-child(2) .item.title-heading.customers:not(:first-child), .list.dealer.title-sub.product-comfortable:nth-child(2) .item.title-heading.customers:not(:first-child), .list.dealer.product-comfortable.customers-submit:nth-child(2) .item.title-heading.customers:not(:first-child), .list.title-heading.dealer:nth-child(2) .item.customers.title-sub.product-comfortable:not(:first-child), .list.title-heading.dealer:nth-child(2) .item.customers.product-comfortable.customers-submit:not(:first-child), .list.dealer.title-sub.product-comfortable:nth-child(2) .item.customers.title-sub.product-comfortable:not(:first-child), .list.dealer.product-comfortable.customers-submit:nth-child(2) .item.customers.title-sub.product-comfortable:not(:first-child), .list.dealer.title-sub.product-comfortable:nth-child(2) .item.customers.product-comfortable.customers-submit:not(:first-child), .list.dealer.product-comfortable.customers-submit:nth-child(2) .item.customers.product-comfortable.customers-submit:not(:first-child), .list.title-heading.customers:nth-child(2) .item.title-heading.customers:not(:first-child), .list.customers.title-sub.product-comfortable:nth-child(2) .item.title-heading.customers:not(:first-child), .list.customers.product-comfortable.customers-submit:nth-child(2) .item.title-heading.customers:not(:first-child), .list.title-heading.customers:nth-child(2) .item.customers.title-sub.product-comfortable:not(:first-child), .list.title-heading.customers:nth-child(2) .item.customers.product-comfortable.customers-submit:not(:first-child), .list.customers.title-sub.product-comfortable:nth-child(2) .item.customers.title-sub.product-comfortable:not(:first-child), .list.customers.product-comfortable.customers-submit:nth-child(2) .item.customers.title-sub.product-comfortable:not(:first-child), .list.customers.title-sub.product-comfortable:nth-child(2) .item.customers.product-comfortable.customers-submit:not(:first-child), .list.customers.product-comfortable.customers-submit:nth-child(2) .item.customers.product-comfortable.customers-submit:not(:first-child) {
   margin-left: 5.2rem;
 }
 
-.title-heading.nav-header, .nav-header.title-sub.product-comfortable, .title-heading.dealer, .dealer.title-sub.product-comfortable, .title-heading.customers, .customers.title-sub.product-comfortable {
+.title-heading.nav-header, .nav-header.title-sub.product-comfortable, .nav-header.product-comfortable.customers-submit, .title-heading.dealer, .dealer.title-sub.product-comfortable, .dealer.product-comfortable.customers-submit, .title-heading.customers, .customers.title-sub.product-comfortable, .customers.product-comfortable.customers-submit {
   font-size: 1.6rem;
   color: #ffffff;
   font-family: "SVN-Avo";
@@ -126,16 +126,24 @@ body {
   letter-spacing: 0.2137rem;
   line-height: 2.5;
 }
-.title-heading.dealer, .dealer.title-sub.product-comfortable, .title-heading.customers, .customers.title-sub.product-comfortable {
+.title-heading.dealer, .dealer.title-sub.product-comfortable, .dealer.product-comfortable.customers-submit, .title-heading.customers, .customers.title-sub.product-comfortable, .customers.product-comfortable.customers-submit {
   padding: 0 2.4rem 0.4rem 2.4rem;
   display: inline;
   background-color: #f4352c;
   margin: 0 0.5rem 0 1.5rem;
 }
-.title-heading.customers, .customers.title-sub.product-comfortable {
+.title-heading.customers, .customers.title-sub.product-comfortable, .customers.product-comfortable.customers-submit {
+  text-decoration: none;
   margin: unset;
 }
-.title-heading.vehicle-name, .vehicle-name.title-sub.product-comfortable {
+.title-heading.customers-title, .customers-title.title-sub.product-comfortable, .customers-title.product-comfortable.customers-submit {
+  font-size: 5rem;
+  color: #000000;
+  font-family: "SFU-DIN";
+  text-transform: uppercase;
+  line-height: 1.25;
+}
+.title-heading.vehicle-name, .vehicle-name.title-sub.product-comfortable, .vehicle-name.product-comfortable.customers-submit {
   font-size: 4.8rem;
   color: #ffffff;
   font-family: "D-DIN Condensed";
@@ -143,7 +151,7 @@ body {
   letter-spacing: 0.25rem;
   line-height: 0.8333333333;
 }
-.title-heading.slider-title, .slider-title.title-sub.product-comfortable {
+.title-heading.slider-title, .slider-title.title-sub.product-comfortable, .slider-title.product-comfortable.customers-submit {
   font-size: 4.8rem;
   color: #ffffff;
   font-family: "SVN-Avo";
@@ -154,7 +162,7 @@ body {
   transform: translateY(50%);
   line-height: 1.2;
 }
-.title-heading.home-mission, .home-mission.title-sub.product-comfortable, .title-heading.product-product, .product-product.title-sub.product-comfortable, .title-heading.home-product, .home-product.title-sub.product-comfortable {
+.title-heading.home-mission, .home-mission.title-sub.product-comfortable, .home-mission.product-comfortable.customers-submit, .title-heading.product-product, .product-product.title-sub.product-comfortable, .product-product.product-comfortable.customers-submit, .title-heading.home-product, .home-product.title-sub.product-comfortable, .home-product.product-comfortable.customers-submit {
   font-size: 6rem;
   color: #000000;
   font-family: "SFU-DIN";
@@ -163,7 +171,7 @@ body {
   letter-spacing: 0.21rem;
   line-height: 0.6666666667;
 }
-.title-heading.home-mission::before, .home-mission.title-sub.product-comfortable::before, .title-heading.product-product::before, .product-product.title-sub.product-comfortable::before, .title-heading.home-product::before, .home-product.title-sub.product-comfortable::before {
+.title-heading.home-mission::before, .home-mission.title-sub.product-comfortable::before, .home-mission.product-comfortable.customers-submit::before, .title-heading.product-product::before, .product-product.title-sub.product-comfortable::before, .product-product.product-comfortable.customers-submit::before, .title-heading.home-product::before, .home-product.title-sub.product-comfortable::before, .home-product.product-comfortable.customers-submit::before {
   content: "";
   width: 65%;
   height: auto;
@@ -173,13 +181,13 @@ body {
   transform: translateY(-100%);
   border-bottom: 0.3rem solid #000000;
 }
-.title-heading.home-product, .home-product.title-sub.product-comfortable {
+.title-heading.home-product, .home-product.title-sub.product-comfortable, .home-product.product-comfortable.customers-submit {
   font-family: "SFU-SHRIF";
 }
-.title-heading.home-product::before, .home-product.title-sub.product-comfortable::before {
+.title-heading.home-product::before, .home-product.title-sub.product-comfortable::before, .home-product.product-comfortable.customers-submit::before {
   content: none;
 }
-.title-heading.home-car, .home-car.title-sub.product-comfortable {
+.title-heading.home-car, .home-car.title-sub.product-comfortable, .home-car.product-comfortable.customers-submit {
   font-size: 6rem;
   color: #000000;
   font-family: "SFU-DIN";
@@ -187,7 +195,7 @@ body {
   white-space: pre-line;
   line-height: 1.2;
 }
-.title-heading.home-news, .home-news.title-sub.product-comfortable {
+.title-heading.home-news, .home-news.title-sub.product-comfortable, .home-news.product-comfortable.customers-submit {
   font-size: 6rem;
   color: #000000;
   font-family: "SFU-DIN";
@@ -195,7 +203,7 @@ body {
   letter-spacing: 0.21rem;
   line-height: 0.6666666667;
 }
-.title-heading.home-details, .home-details.title-sub.product-comfortable, .title-heading.title-sub.home-network, .title-sub.home-network.product-comfortable {
+.title-heading.home-details, .title-heading.customers-submit, .title-heading.description-details.news-details, .home-details.title-sub.product-comfortable, .product-comfortable.customers-submit, .title-sub.product-comfortable.description-details.news-details, .title-heading.title-sub.home-network, .title-sub.home-network.product-comfortable {
   font-size: 3.5rem;
   color: #000000;
   font-family: "D-DIN Condensed";
@@ -203,11 +211,11 @@ body {
   white-space: pre-line;
   line-height: 1.1428571429;
 }
-.title-heading.home-details.first, .home-details.first.title-sub.product-comfortable, .title-heading.first.title-sub.home-network, .first.title-sub.home-network.product-comfortable {
+.title-heading.home-details.first, .title-heading.first.customers-submit, .title-heading.first.description-details.news-details, .home-details.first.title-sub.product-comfortable, .first.product-comfortable.customers-submit, .first.title-sub.product-comfortable.description-details.news-details, .title-heading.first.title-sub.home-network, .first.title-sub.home-network.product-comfortable {
   font-size: 2rem;
   line-height: 2;
 }
-.title-heading.home-network, .home-network.title-sub.product-comfortable {
+.title-heading.home-network, .home-network.title-sub.product-comfortable, .home-network.product-comfortable.customers-submit {
   font-size: 6rem;
   color: #000000;
   font-family: "SFU-DIN";
@@ -215,7 +223,7 @@ body {
   letter-spacing: 0.21rem;
   line-height: 0.6666666667;
 }
-.title-heading.home-contact, .home-contact.title-sub.product-comfortable {
+.title-heading.home-contact, .home-contact.title-sub.product-comfortable, .home-contact.product-comfortable.customers-submit {
   font-size: 3rem;
   color: #ffffff;
   font-family: "D-DIN Condensed";
@@ -223,10 +231,10 @@ body {
   letter-spacing: 0.21rem;
   line-height: 1.3333333333;
 }
-.title-heading.product-product::before, .product-product.title-sub.product-comfortable::before {
+.title-heading.product-product::before, .product-product.title-sub.product-comfortable::before, .product-product.product-comfortable.customers-submit::before {
   content: none;
 }
-.title-heading.product-comfortable, .product-comfortable.title-sub {
+.title-heading.product-comfortable, .product-comfortable.title-sub, .product-comfortable.customers-submit {
   font-size: 5rem;
   color: #000000;
   font-family: "SFU-DIN";
@@ -235,41 +243,41 @@ body {
   letter-spacing: 0.21rem;
   white-space: pre-line;
 }
-.title-heading.product-adventure, .product-adventure.title-sub.product-comfortable {
+.title-heading.product-adventure, .product-adventure.title-sub.product-comfortable, .product-adventure.product-comfortable.customers-submit {
   font-size: 6rem;
   color: #000000;
   font-family: "SFU-DIN";
   text-transform: uppercase;
   white-space: pre-line;
 }
-.title-heading.product-business, .product-business.title-sub.product-comfortable {
+.title-heading.product-business, .product-business.title-sub.product-comfortable, .product-business.product-comfortable.customers-submit {
   font-size: 6rem;
   color: #000000;
   font-family: "SFU-DIN";
   text-transform: uppercase;
   white-space: pre-line;
 }
-.title-heading.car-comfortable, .car-comfortable.title-sub.product-comfortable {
+.title-heading.car-comfortable, .car-comfortable.title-sub.product-comfortable, .car-comfortable.product-comfortable.customers-submit {
   font-size: 2.2rem;
   color: #000000;
   font-family: "SFU-DIN";
   text-transform: uppercase;
   letter-spacing: 0.21rem;
 }
-.title-heading.car-adventure, .car-adventure.title-sub.product-comfortable {
+.title-heading.car-adventure, .car-adventure.title-sub.product-comfortable, .car-adventure.product-comfortable.customers-submit {
   font-size: 1.8rem;
   color: #000000;
   font-family: "UTM-Avo";
   text-transform: none;
 }
-.title-heading.car-business, .car-business.title-sub.product-comfortable {
+.title-heading.car-business, .car-business.title-sub.product-comfortable, .car-business.product-comfortable.customers-submit {
   font-size: 2.2rem;
   color: #000000;
   font-family: "SFU-DIN";
   text-transform: uppercase;
   letter-spacing: 0.09rem;
 }
-.title-heading.details-comfortable, .details-comfortable.title-sub.product-comfortable {
+.title-heading.details-comfortable, .details-comfortable.title-sub.product-comfortable, .details-comfortable.product-comfortable.customers-submit {
   font-size: 2.2rem;
   color: #ffffff;
   font-family: "SFU-DIN";
@@ -282,31 +290,31 @@ body {
   text-align: center;
   border-radius: 23.5rem;
 }
-.title-heading.details-comfortable:first-child, .details-comfortable.title-sub.product-comfortable:first-child {
+.title-heading.details-comfortable:first-child, .details-comfortable.title-sub.product-comfortable:first-child, .details-comfortable.product-comfortable.customers-submit:first-child {
   margin-bottom: 2.1rem;
 }
-.title-heading.details-title, .details-title.title-sub.product-comfortable {
+.title-heading.details-title, .details-title.title-sub.product-comfortable, .details-title.product-comfortable.customers-submit {
   font-size: 8rem;
   color: #000000;
   font-family: "SFU-SHRIF";
   text-transform: uppercase;
   letter-spacing: 0.21rem;
 }
-.title-heading.details-offer, .details-offer.title-sub.product-comfortable {
+.title-heading.details-offer, .details-offer.title-sub.product-comfortable, .details-offer.product-comfortable.customers-submit {
   font-size: 3.5rem;
   color: #000000;
   font-family: "SFU-DIN";
   text-transform: uppercase;
   line-height: 1.1428571429;
 }
-.title-heading.details-weight, .details-weight.title-sub.product-comfortable {
+.title-heading.details-weight, .details-weight.title-sub.product-comfortable, .details-weight.product-comfortable.customers-submit {
   font-size: 2rem;
   color: #000000;
   font-family: "UTM-Avo";
   text-transform: none;
   padding-bottom: 1rem;
 }
-.title-heading.details-specifications, .details-specifications.title-sub.product-comfortable {
+.title-heading.details-specifications, .details-specifications.title-sub.product-comfortable, .details-specifications.product-comfortable.customers-submit {
   font-size: 6rem;
   color: #000000;
   font-family: "SFU-DIN";
@@ -314,7 +322,7 @@ body {
   line-height: 1.5;
   margin-bottom: 3.4rem;
 }
-.title-heading.details-engine, .details-engine.title-sub.product-comfortable {
+.title-heading.details-engine, .details-engine.title-sub.product-comfortable, .details-engine.product-comfortable.customers-submit {
   font-size: 3.5rem;
   color: #000000;
   font-family: "SFU-DIN";
@@ -323,7 +331,7 @@ body {
   margin-bottom: 1.1rem;
   position: relative;
 }
-.title-heading.details-engine::before, .details-engine.title-sub.product-comfortable::before {
+.title-heading.details-engine::before, .details-engine.title-sub.product-comfortable::before, .details-engine.product-comfortable.customers-submit::before {
   content: "";
   width: 70%;
   height: 0.3rem;
@@ -333,7 +341,7 @@ body {
   transform: translate(-40%, -100%);
   background-color: #000000;
 }
-.title-heading.details-engine::after, .details-engine.title-sub.product-comfortable::after {
+.title-heading.details-engine::after, .details-engine.title-sub.product-comfortable::after, .details-engine.product-comfortable.customers-submit::after {
   content: "";
   width: 3rem;
   height: 0.6rem;
@@ -342,7 +350,7 @@ body {
   margin-bottom: 0.6rem;
   background-color: #000000;
 }
-.title-heading.details-frame, .details-frame.title-sub.product-comfortable, .title-heading.details-size, .details-size.title-sub.product-comfortable {
+.title-heading.details-frame, .details-frame.title-sub.product-comfortable, .details-frame.product-comfortable.customers-submit, .title-heading.details-size, .details-size.title-sub.product-comfortable, .details-size.product-comfortable.customers-submit {
   font-size: 3.5rem;
   color: #000000;
   font-family: "SFU-DIN";
@@ -350,7 +358,7 @@ body {
   line-height: 1.1428571429;
   position: relative;
 }
-.title-heading.details-frame::before, .details-frame.title-sub.product-comfortable::before, .title-heading.details-size::before, .details-size.title-sub.product-comfortable::before {
+.title-heading.details-frame::before, .details-frame.title-sub.product-comfortable::before, .details-frame.product-comfortable.customers-submit::before, .title-heading.details-size::before, .details-size.title-sub.product-comfortable::before, .details-size.product-comfortable.customers-submit::before {
   content: "";
   width: 3rem;
   height: 0.3rem;
@@ -360,7 +368,7 @@ body {
   transform: translateY(-100%) rotate(90deg);
   background-color: #000000;
 }
-.title-heading.details-frame::after, .details-frame.title-sub.product-comfortable::after, .title-heading.details-size::after, .details-size.title-sub.product-comfortable::after {
+.title-heading.details-frame::after, .details-frame.title-sub.product-comfortable::after, .details-frame.product-comfortable.customers-submit::after, .title-heading.details-size::after, .details-size.title-sub.product-comfortable::after, .details-size.product-comfortable.customers-submit::after {
   content: "";
   width: 3rem;
   height: 0.3rem;
@@ -370,13 +378,13 @@ body {
   transform: translateY(-100%);
   background-color: #000000;
 }
-.title-heading.details-frame:hover::before, .details-frame.title-sub.product-comfortable:hover::before, .title-heading.details-size:hover::before, .details-size.title-sub.product-comfortable:hover::before, .title-heading.details-frame:hover::after, .details-frame.title-sub.product-comfortable:hover::after, .title-heading.details-size:hover::after, .details-size.title-sub.product-comfortable:hover::after {
+.title-heading.details-frame:hover::before, .details-frame.title-sub.product-comfortable:hover::before, .details-frame.product-comfortable.customers-submit:hover::before, .title-heading.details-size:hover::before, .details-size.title-sub.product-comfortable:hover::before, .details-size.product-comfortable.customers-submit:hover::before, .title-heading.details-frame:hover::after, .details-frame.title-sub.product-comfortable:hover::after, .details-frame.product-comfortable.customers-submit:hover::after, .title-heading.details-size:hover::after, .details-size.title-sub.product-comfortable:hover::after, .details-size.product-comfortable.customers-submit:hover::after {
   background-color: red;
 }
-.title-heading.details-frame:nth-last-of-type(2), .details-frame.title-sub.product-comfortable:nth-last-of-type(2), .title-heading.details-size:nth-last-of-type(2), .details-size.title-sub.product-comfortable:nth-last-of-type(2) {
+.title-heading.details-frame:nth-last-of-type(2), .details-frame.title-sub.product-comfortable:nth-last-of-type(2), .details-frame.product-comfortable.customers-submit:nth-last-of-type(2), .title-heading.details-size:nth-last-of-type(2), .details-size.title-sub.product-comfortable:nth-last-of-type(2), .details-size.product-comfortable.customers-submit:nth-last-of-type(2) {
   margin: 2.7rem 0 2.7rem;
 }
-.title-heading.details-subframe, .details-subframe.title-sub.product-comfortable {
+.title-heading.details-subframe, .details-subframe.title-sub.product-comfortable, .details-subframe.product-comfortable.customers-submit {
   width: 60%;
   height: 0.3rem;
   position: absolute;
@@ -385,7 +393,7 @@ body {
   transform: translate(-35%, -100%);
   background-color: #000000;
 }
-.title-heading.details-feature, .details-feature.title-sub.product-comfortable {
+.title-heading.details-feature, .details-feature.title-sub.product-comfortable, .details-feature.product-comfortable.customers-submit {
   font-size: 7.3rem;
   color: #000000;
   font-family: "D-DIN Condensed";
@@ -394,7 +402,7 @@ body {
   line-height: 1.825;
   position: relative;
 }
-.title-heading.details-feature span, .details-feature.title-sub.product-comfortable span {
+.title-heading.details-feature span, .details-feature.title-sub.product-comfortable span, .details-feature.product-comfortable.customers-submit span {
   font-size: 4.8rem;
   color: rgba(0, 0, 0, 0.4);
   font-family: "D-DIN Condensed";
@@ -402,7 +410,7 @@ body {
   letter-spacing: 0.34rem;
   line-height: 1.2;
 }
-.title-heading.details-feature::before, .details-feature.title-sub.product-comfortable::before {
+.title-heading.details-feature::before, .details-feature.title-sub.product-comfortable::before, .details-feature.product-comfortable.customers-submit::before {
   content: "";
   width: 100%;
   height: 0.3rem;
@@ -412,13 +420,44 @@ body {
   background-color: #000000;
   transform: translate(-87%, -100%);
 }
-.title-heading.feature-title, .feature-title.title-sub.product-comfortable {
+.title-heading.feature-title, .feature-title.title-sub.product-comfortable, .feature-title.product-comfortable.customers-submit {
   font-size: 6rem;
   color: #000000;
   font-family: "SFU-DIN";
   text-transform: uppercase;
   text-align: center;
   line-height: 1.5;
+}
+.title-heading.service-hero, .service-hero.title-sub.product-comfortable, .service-hero.product-comfortable.customers-submit {
+  font-size: 7rem;
+  color: #ffffff;
+  font-family: "SFU-DIN";
+  text-transform: uppercase;
+  letter-spacing: 0.21rem;
+  line-height: 1.1428571429;
+}
+.title-heading.service-product, .service-product.title-sub.product-comfortable, .service-product.product-comfortable.customers-submit {
+  font-size: 4rem;
+  color: #000000;
+  font-family: "SFU-DIN";
+  text-transform: uppercase;
+  line-height: 1;
+}
+.title-heading.news-item, .news-item.title-sub.product-comfortable, .news-item.product-comfortable.customers-submit {
+  font-size: 3.5rem;
+  color: #000000;
+  font-family: "SFU-DIN";
+  text-transform: uppercase;
+  margin-top: 0.8rem;
+  line-height: 1.1428571429;
+  white-space: pre-line;
+}
+.title-heading.news-item span, .news-item.title-sub.product-comfortable span, .news-item.product-comfortable.customers-submit span {
+  font-size: 2rem;
+  color: #000000;
+  font-family: "SFU-DIN";
+  text-transform: uppercase;
+  line-height: 2;
 }
 .title-body.home-product, .details-specifications--weight span.home-product {
   font-size: 2.2rem;
@@ -490,7 +529,16 @@ body {
   text-transform: uppercase;
   line-height: 0.875;
 }
-.title-sub.slider-title {
+.title-body.service-hero, .details-specifications--weight span.service-hero {
+  font-size: 2.5rem;
+  color: #ffffff;
+  font-family: "UTM-Avo";
+  text-transform: none;
+  letter-spacing: 0.21rem;
+  line-height: 1.6;
+  margin-top: 1rem;
+}
+.title-sub.slider-title, .slider-title.customers-submit {
   font-size: 1.4rem;
   color: #ffffff;
   font-family: "UTM-Avo";
@@ -501,7 +549,7 @@ body {
   -ms-writing-mode: tb-lr;
       writing-mode: vertical-lr;
 }
-.title-sub.home-details, .title-sub.home-network {
+.title-sub.home-details, .title-sub.customers-submit, .customers-submit, .title-sub.description-details.news-details, .description-details.news-details.customers-submit, .title-sub.home-network, .home-network.customers-submit {
   font-size: 2.5rem;
   color: #ffffff;
   font-family: "SFU-DIN";
@@ -514,20 +562,20 @@ body {
   border-radius: 1.26rem;
   padding: 1.2rem 4.9rem 1.8rem 5.4rem;
 }
-.title-sub.home-details:hover, .title-sub.home-network:hover {
+.title-sub.home-details:hover, .customers-submit:hover, .title-sub.description-details.news-details:hover, .title-sub.home-network:hover {
   transition: 0.3s linear;
   filter: brightness(90%);
 }
-.title-sub.home-network {
+.title-sub.home-network, .home-network.customers-submit {
   padding: 1.4rem 11rem 2.2rem 11rem;
 }
-.title-sub.product-comfortable {
+.title-sub.product-comfortable, .product-comfortable.customers-submit {
   color: #7f7f7f;
   border-left: 1px solid #000000;
   padding-left: 2.5rem;
   margin-left: 3.1rem;
 }
-.title-sub.product-comfortable::before {
+.title-sub.product-comfortable::before, .product-comfortable.customers-submit::before {
   content: "";
   position: absolute;
   inset: 0 auto auto 0;
@@ -537,28 +585,28 @@ body {
   transform: translateX(100%);
   border-bottom: 1px solid #000000;
 }
-.title-sub.car-comfortable {
+.title-sub.car-comfortable, .car-comfortable.customers-submit {
   font-size: 2.9rem;
   color: #000000;
   font-family: "SFU-DIN";
   text-transform: uppercase;
   letter-spacing: 0.15rem;
 }
-.title-sub.car-adventure {
+.title-sub.car-adventure, .car-adventure.customers-submit {
   font-size: 2.9rem;
   color: #000000;
   font-family: "SFU-DIN";
   text-transform: uppercase;
   letter-spacing: 0.15rem;
 }
-.title-sub.car-business {
+.title-sub.car-business, .car-business.customers-submit {
   font-size: 2.9rem;
   color: #000000;
   font-family: "SFU-DIN";
   text-transform: uppercase;
   letter-spacing: 0.15rem;
 }
-.title-sub.details-wattage {
+.title-sub.details-wattage, .details-wattage.customers-submit {
   font-size: 3rem;
   color: #000000;
   font-family: "SFU-DIN";
@@ -567,8 +615,21 @@ body {
   text-align: center;
   line-height: 1.3333333333;
 }
+.title-sub.service-product, .service-product.customers-submit {
+  font-size: 2.5rem;
+  color: #ffffff;
+  font-family: "SFU-DIN";
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #f4352c;
+  letter-spacing: 0.039rem;
+  padding: 1.3rem 7.4rem 1.7rem 4.2rem;
+  line-height: 1.6;
+  border-radius: 3.1rem;
+  margin-bottom: -1.5rem;
+}
 
-.description-heading.home-mission, .description-heading.title-heading.home-product, .description-heading.title-heading.product-product, .description-heading.home-product.title-sub.product-comfortable, .description-heading.product-product.title-sub.product-comfortable {
+.description-heading.home-mission, .description-heading.title-heading.home-product, .description-heading.title-heading.product-product, .description-heading.home-product.title-sub.product-comfortable, .description-heading.home-product.product-comfortable.customers-submit, .description-heading.product-product.title-sub.product-comfortable, .description-heading.product-product.product-comfortable.customers-submit {
   font-size: 2.2rem;
   color: #000000;
   font-family: "UTM-Avo";
@@ -595,7 +656,7 @@ body {
   letter-spacing: 0.21rem;
   line-height: 1.8181818182;
 }
-.description-heading.home-details, .description-heading.title-sub.home-network {
+.description-heading.home-details, .description-heading.customers-submit, .description-heading.description-details.news-details, .description-heading.title-sub.home-network {
   font-size: 1.6rem;
   color: #000000;
   font-family: "UTM-Avo";
@@ -610,7 +671,7 @@ body {
   margin-top: 0.8rem;
   line-height: 1.25;
 }
-.description-heading.home-details.first, .description-heading.first.title-sub.home-network {
+.description-heading.home-details.first, .description-heading.first.customers-submit, .description-heading.first.description-details.news-details, .description-heading.first.title-sub.home-network {
   font-size: 3.5rem;
   color: #000000;
   font-family: "D-DIN Condensed";
@@ -620,7 +681,7 @@ body {
   margin-top: -0.5rem;
   line-height: 1.1428571429;
 }
-.description-heading.home-details.seconds, .description-heading.seconds.title-sub.home-network {
+.description-heading.home-details.seconds, .description-heading.seconds.customers-submit, .description-heading.seconds.description-details.news-details, .description-heading.seconds.title-sub.home-network {
   margin-top: 0.5rem;
 }
 .description-heading.home-network {
@@ -698,6 +759,22 @@ body {
   line-height: 1.3333333333;
   white-space: pre-line;
 }
+.description-heading.service-faq {
+  font-size: 3rem;
+  color: #000000;
+  font-family: "SFU-DIN";
+  text-transform: none;
+  margin-bottom: 8.7rem;
+  line-height: 1.3333333333;
+}
+.description-heading.customers-description {
+  font-size: 3rem;
+  color: #000000;
+  font-family: "SFU-DIN";
+  text-transform: none;
+  white-space: pre-line;
+  line-height: 1.3333333333;
+}
 .description-details.home-product {
   font-size: 1.1rem;
   color: #ffffff;
@@ -715,13 +792,16 @@ body {
   transition: 0.5s linear;
   background-color: rgba(244, 53, 44, 0.5);
 }
-.description-details.home-details, .description-details.title-sub.home-network {
+.description-details.home-details, .description-details.customers-submit, .description-details.news-details, .description-details.title-sub.home-network {
   font-size: 1.6rem;
   color: #000000;
   font-family: "UTM-Avo";
   text-transform: none;
   letter-spacing: 0.21rem;
   line-height: 2.5;
+}
+.description-details.news-details {
+  margin-top: 6rem;
 }
 
 .hero {
@@ -731,6 +811,12 @@ body {
 .hero-banner {
   width: 100%;
   height: auto;
+}
+.hero-content {
+  position: absolute;
+  inset: 50% auto auto 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
 }
 .hero-button {
   position: absolute;
@@ -866,7 +952,7 @@ body {
   max-width: 100%;
   max-height: 100%;
 }
-.home-image.home-details, .home-image.title-sub.home-network {
+.home-image.home-details, .home-image.customers-submit, .home-image.title-sub.home-network, .home-image.description-details.news-details {
   width: 100%;
   height: 100%;
   max-width: 100%;
@@ -874,7 +960,7 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.home-image.home-details:hover, .home-image.title-sub.home-network:hover {
+.home-image.home-details:hover, .home-image.customers-submit:hover, .home-image.title-sub.home-network:hover, .home-image.description-details.news-details:hover {
   transform: scale(1.2);
   transition: 0.5s linear;
 }
@@ -1368,4 +1454,214 @@ body {
 .details-feature--item {
   grid-column: 2;
   position: relative;
+}
+
+.service-container {
+  padding: 9.6rem 25.4rem 9.6rem;
+}
+.service-layout {
+  display: flex;
+  flex-direction: row;
+  justify-content: auto;
+  align-items: auto;
+}
+
+.faq-list {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: auto;
+  align-items: auto;
+  padding: 2.9rem 2.6rem 3.6rem 6.9rem;
+  background-color: #f4352c;
+  overflow: hidden;
+}
+.faq-item {
+  font-size: 3rem;
+  color: #ffffff;
+  font-family: "SFU-DIN";
+  text-transform: uppercase;
+  width: 100%;
+  height: auto;
+  letter-spacing: 0.05rem;
+  line-height: 1.3333333333;
+  position: relative;
+  transition: 0.25s linear;
+  list-style: square;
+}
+.faq-item::marker {
+  font-size: 2rem;
+}
+.faq-item::before {
+  content: "";
+  width: 25%;
+  height: 0.6rem;
+  position: absolute;
+  inset: 45% auto auto -55%;
+  transform: translate(0%, 100%);
+  background-color: #ffffff;
+  transition: 0.25s linear;
+}
+.faq-item.active::before, .faq-item:hover::before {
+  content: "";
+  display: inline-block;
+  visibility: unset;
+  transform: translate(100%, 100%);
+}
+.faq-content {
+  flex: 1;
+  margin-left: 12.8rem;
+  padding-bottom: 1.5rem;
+}
+
+.news-layout {
+  padding: 13rem 0 12rem 0;
+}
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 35rem);
+  justify-content: center;
+  -moz-column-gap: 3rem;
+       column-gap: 3rem;
+  row-gap: 5.5rem;
+}
+.news-image {
+  overflow: hidden;
+}
+.news-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 0.3s linear;
+}
+.news-image img:hover {
+  transform: scale(1.2);
+}
+.news-griditem {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  outline: 0.1rem solid rgba(0, 0, 0, 0.1);
+}
+.news-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: auto;
+  align-items: auto;
+  text-align: center;
+}
+.news-number {
+  font-size: 3.1rem;
+  color: #000000;
+  font-family: "SFU-DIN";
+  text-transform: none;
+  padding: 0.7rem 2rem;
+  outline: 0.1rem solid #000000;
+  display: inline-block;
+  line-height: 1.2903225806;
+}
+.news-number:nth-child(2) {
+  margin: 0 1.3rem;
+}
+.news-number.active, .news-number.faq-item:hover {
+  outline: none;
+  background-color: #f4352c;
+  color: #ffffff;
+}
+.news-list {
+  margin: 0 2.2rem;
+}
+.news-page {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8rem;
+}
+.news-page--prev {
+  font-size: 2rem;
+  color: #000000;
+  font-family: "Arial";
+  text-transform: none;
+  font-weight: bold;
+  line-height: 2;
+  padding: 0.7rem 0.9rem;
+  outline: 0.1rem solid #000000;
+  transition: 0.3s ease;
+}
+.news-page--prev:hover {
+  outline: none;
+  background-color: #f4352c;
+  color: #ffffff;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.customers-layout {
+  display: flex;
+  flex-direction: row;
+  justify-content: auto;
+  align-items: auto;
+  padding: 14rem 0 34.5rem 0;
+}
+.customers-image {
+  position: relative;
+}
+.customers-image::before {
+  content: "";
+  width: 16.7rem;
+  height: 1.1rem;
+  position: absolute;
+  inset: 0 0 auto auto;
+  transform: translateX(100%);
+  margin: 5.5rem 3.3rem 0 0;
+  background-color: #000000;
+}
+.customers-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.customers-product {
+  padding: 8.1rem 0 0 9.3rem;
+}
+.customers-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 4.8rem 6.8rem;
+  padding-top: 7.8rem;
+}
+.customers-row {
+  position: relative;
+}
+.customers-row:nth-child(3) {
+  grid-column: span 2;
+}
+.customers-input {
+  font-size: 2.2rem;
+  color: #7f7f7f;
+  font-family: "UTM-Avo";
+  text-transform: none;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-bottom: 0.2rem solid #000000;
+  outline: none;
+  padding-bottom: 1rem;
+  line-height: 1.8181818182;
+}
+.customers-arrow {
+  position: absolute;
+  inset: 50% 0 auto auto;
+  transform: translateY(-50%);
+}
+.customers-submit {
+  border-radius: 3.1rem;
+  border: 0 none transparent;
+  margin-top: 5rem;
 }/*# sourceMappingURL=style.css.map */

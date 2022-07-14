@@ -15,14 +15,21 @@
 
             padding: 0 2.4rem 0.4rem 2.4rem;
             display: inline;
-
+            
             background-color: $cltext-light-pink;
             margin: 0 calc(1rem - 0.5rem) 0 calc(2rem - 0.5rem);
         }
         &.customers{
             @extend .dealer;
 
+            text-decoration: none;
             margin: unset;
+
+            &-title{
+                @include font(5rem, $cltext-light-black, "SFU-DIN", uppercase);
+            
+                line-height: calc(50 / 40);
+            }
         }
         // vehicle 
         &.vehicle{
@@ -292,6 +299,34 @@
                 line-height: calc(60 / 40);
             }
         }
+        &.service{
+            &-hero{
+                @include font(7rem, $cltext-light-white, "SFU-DIN", uppercase);
+
+                letter-spacing: 0.21rem;
+                line-height: calc(40 / 70 * 2);
+            }
+            &-product{
+                @include font(4rem, $cltext-light-black, "SFU-DIN", uppercase);
+
+                line-height: calc(40 / 40);
+            }
+        }
+        &.news{
+            &-item{
+                @include font(3.5rem, $cltext-light-black, "SFU-DIN", uppercase);
+
+                margin-top: calc(2rem - 1.2rem);
+                line-height: calc(40 / 35);
+                white-space: pre-line;
+
+                span{
+                    @include font(2rem, $cltext-light-black, "SFU-DIN", uppercase);
+
+                    line-height: calc(40 / 20);
+                }
+            }
+        }
     }
     &-body{
         // home
@@ -351,6 +386,15 @@
                 @include font(3.5rem, $cltext-light-black, "SFU-DIN", uppercase);
 
                 line-height: calc(35 / 40);
+            }
+        }
+        &.service{
+            &-hero{
+                @include font(2.5rem, $cltext-light-white, "UTM-Avo", none);
+
+                letter-spacing: 0.21rem;
+                line-height: calc(40 / 25);
+                margin-top: calc(2.1rem - 1.1rem);
             }
         }
     }
@@ -437,6 +481,21 @@
                 display: block;
                 text-align: center;
                 line-height: calc(40 / 30);
+            }
+        }
+        &.service{
+            &-product{
+                @include font(2.5rem, $cltext-light-white, "SFU-DIN", uppercase);
+
+                text-decoration: none;
+                background-color: $cltext-light-pink;
+                letter-spacing: 0.039rem;
+                
+                padding: calc(1.6rem - 0.3rem) 7.4rem calc(2.2rem - 0.5rem) 4.2rem;
+                line-height: calc(40 / 25);
+                border-radius: 3.1rem;
+
+                margin-bottom: -1.5rem;
             }
         }
     }
@@ -554,30 +613,55 @@
                 white-space: pre-line;
             }
         }
-    }
-    &-details{
-        &.home-product{
-            @include font(1.1rem, $cltext-light-white, "SFU-DIN", uppercase);
+        &.service{
+            &-faq{
+                @include font(3rem, $cltext-light-black, "SFU-DIN", none);
 
-            letter-spacing: 0.15rem;
-            line-height: calc(11 / 40);
-            transition: 0.5s linear;
-
-            background-color: $cltext-light-pink;
-            border-radius: 1.26rem;
-            padding: 0.5rem 2.2rem 0.9rem 1.8rem;
-            text-decoration: none;
-
-            &:hover{
-                transition: 0.5s linear;
-                background-color: rgba($cltext-light-pink, 0.5);
+                margin-bottom: 8.7rem;
+                line-height: calc(40 / 30);
             }
         }
-        &.home-details{
-            @include font(1.6rem, $cltext-light-black, "UTM-Avo", none);
+        &.customers{
+            &-description{
+                @include font(3rem, $cltext-light-black, "SFU-DIN", none);
 
-            letter-spacing: 0.21rem;
-            line-height: calc(40 / 16);
+                white-space: pre-line;
+                line-height: calc(40 / 30);
+            }
+        }
+    }
+    &-details{
+        &.home {
+            &-product{
+                @include font(1.1rem, $cltext-light-white, "SFU-DIN", uppercase);
+
+                letter-spacing: 0.15rem;
+                line-height: calc(11 / 40);
+                transition: 0.5s linear;
+
+                background-color: $cltext-light-pink;
+                border-radius: 1.26rem;
+                padding: 0.5rem 2.2rem 0.9rem 1.8rem;
+                text-decoration: none;
+
+                &:hover{
+                    transition: 0.5s linear;
+                    background-color: rgba($cltext-light-pink, 0.5);
+                }
+            }
+            &-details{
+                @include font(1.6rem, $cltext-light-black, "UTM-Avo", none);
+    
+                letter-spacing: 0.21rem;
+                line-height: calc(40 / 16);
+            }
+        }
+        &.news{
+            &-details{
+                @extend .home-details;
+
+                margin-top: calc(8rem - 2rem);
+            }
         }
     }
 }
